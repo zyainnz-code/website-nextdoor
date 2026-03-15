@@ -74,3 +74,54 @@ footer small {
 .text-maroon { color: var(--maroon-nd); }
 .bg-maroon { background-color: var(--maroon-nd); }
 .bg-cream { background-color: var(--putih-nd); }
+
+.hero-section {
+    background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=2070') no-repeat center center/cover;
+    min-height: 85vh;
+    color: white;
+}
+
+.section-title {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* --- 7. PENYESUAIAN HEADER (NAVBAR) --- */
+.navbar-nav .nav-link {
+    position: relative;
+    padding: 5px 0;
+    margin: 0 15px;
+}
+
+/* Membuat garis bawah pada menu aktif/hover sesuai gambar */
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--putih-nd);
+    transition: width 0.3s;
+}
+
+.navbar-nav .nav-link.active::after,
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+/* Styling untuk teks bahasa EN */
+.text-warning {
+    color: var(--kuning-nd) !important;
+}
+
+/* Responsif: Menyesuaikan jarak main agar pas dengan navbar */
+@media (max-width: 991px) {
+    .navbar-nav {
+        padding: 20px 0;
+        text-align: center;
+    }
+    .gap-4 {
+        gap: 1rem !important;
+    }
+}
