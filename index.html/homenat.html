@@ -25,20 +25,42 @@
           <img
             src="image/logo-toga.png"
             alt="TOGA Program Logo"
-            style="width: 250px"
+            style="width: 300px"
+            class="toga-icon"
           />
           <!-- <h1>TOGA Program</h1> -->
-          <p style="font-size: small; font-weight: normal">
+          <p style="font-size: small; font-weight: normal" class="hero-desk">
             Program TOGA adalah insiatif pembelajaran komprehensif yang
             menggabungkan kursus Bahasa Inggris dan kursus pengembangan
             keterampilan untuk mempersiapkan Anda menuju kesuksesan akademis,
             profesional, dan pribadi.
           </p>
 
-          <div class="promo-container">
-            <img src="image/ielts.jpeg" alt="promo ielts" class="promo-img" />
-            <img src="image/promotion.jpeg" alt="promosi" class="promo-img" />
+          <div class="slideshow-container">
+            <div class="slidegw fade">
+              <img
+                src="image/ielts.jpeg"
+                alt="promo ielts"
+                class="promo-img"
+                onclick="openModal(this.src)"
+              />
+            </div>
+
+            <div class="slidegw fade">
+              <img
+                src="image/promotion.jpeg"
+                alt="promosi"
+                class="promo-img"
+                onclick="openModal(this.src)"
+              />
+            </div>
           </div>
+
+          <div id="modalgw" class="modal" onclick="closeModal()">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01" />
+          </div>
+
           <button class="cta-button">Daftar Sekarang</button>
         </div>
       </div>
@@ -50,12 +72,10 @@
       <div class="feature-box">Practical</div>
     </section>
 
-    <!-- <div id="chat-bot">
-        <img src="image/bebengang.png" alt="Help">
-    </div> -->
-
     <footer>
       <p>&copy; 2026 English Next Door. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
