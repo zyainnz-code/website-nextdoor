@@ -1,3 +1,24 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.registration-section {
+  padding: 100px 5%;
+  display: flex;
+  justify-content: center;
+  background-color: #fdf9f3;
+}
+
+.form-container {
+  background: white;
+  width: 100%;
+  max-width: 500px;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  border-top: 8px solid #800000;
+}
+
 /* margin rapi */
 * {
   margin: 0;
@@ -424,6 +445,75 @@ nav ul li a {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   font-size: 0.8rem;
   color: #bbb;
+}
+
+.bg-cream {
+  background-color: #fdf9f3;
+}
+
+.form-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-header h2 {
+  color: #800000;
+  font-weight: 800;
+}
+
+.form-header p {
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #eee;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: inherit;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #800000;
+  outline: none;
+  background-color: #fff9f9;
+}
+
+.btn-submit {
+  width: 100%;
+  background-color: #800000;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-submit:hover {
+  background-color: #ffd700;
+  color: #800000;
+  transform: translateY(-3px);
 }
 
 @media screen and (max-width: 768px) {

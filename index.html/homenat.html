@@ -61,7 +61,9 @@
             <img class="modal-content" id="img01" />
           </div>
 
-          <button class="cta-button">Daftar Sekarang</button>
+          <a href="#daftar" style="text-decoration: none">
+            <button class="cta-button">Daftar Sekarang</button>
+          </a>
         </div>
       </div>
     </section>
@@ -146,6 +148,64 @@
               <span>fresh Graduate</span>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="daftar" class="registration-section">
+      <div class="form-container">
+        <div
+          id="successMessage"
+          style="display: none; text-align: center; padding: 20px"
+        >
+          <div
+            class="success-icon"
+            style="font-size: 60px; margin-bottom: 20px"
+          >
+            ✅
+          </div>
+          <h2 style="color: #800000; margin-bottom: 10px">
+            Pendaftaran Terkirim!
+          </h2>
+          <p style="color: #555; margin-bottom: 20px">
+            Terima kasih! Kamu akan segera diarahkan ke WhatsApp admin
+            <strong>TOGA Program</strong> untuk konfirmasi.
+          </p>
+        </div>
+
+        <div id="formContent">
+          <div class="form-header">
+            <h2>Formulir Pendaftaran</h2>
+            <p>Satu langkah lagi untuk bergabung dengan TOGA Program!</p>
+          </div>
+
+          <form id="registrationForm">
+            <div class="form-group">
+              <label>Nama Lengkap</label>
+              <input
+                type="text"
+                placeholder="Nama sesuai KTP/Kartu Pelajar"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label>Nomor WhatsApp</label>
+              <input type="tel" placeholder="0812XXXXXXXX" required />
+            </div>
+
+            <div class="form-group">
+              <label>Pilihan Program</label>
+              <select required>
+                <option value="">-- Pilih Program --</option>
+                <option value="English Intensive">English Intensive</option>
+                <option value="Skill Development">Skill Development</option>
+                <option value="Bundle">Bundle (English + Skill)</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn-submit">Kirim via WhatsApp</button>
+          </form>
         </div>
       </div>
     </section>
