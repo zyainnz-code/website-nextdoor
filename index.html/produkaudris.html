@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+
+
+    <title>🔥flash Sale Course 2.0🔥</title>
+    <style>
+        body {
+            font-family: 'Segeo UI', sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+        }
+
+        .header {
+            background: linear-gradient(90deg,#ff512F,#dd2476);
+            color: #f5f5f5;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .countdown {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+       .container{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:25px;
+max-width:1100px;
+margin:40px auto;
+padding:10px;
+}
+
+.card{
+font-size:14px;
+line-height:1.4;
+background:white;
+border-radius:12px;
+box-shadow:0 6px 15px rgba(0,0,0,0.1);
+padding:30px 20px;
+text-align:center;
+position:relative;
+
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+
+min-height:420px;
+}
+
+        .badge {
+            position: absolute;
+            top: -20px;
+            left: 0px;
+            background: red;
+            color: white;
+            padding: 6px 14px;
+            font-size: 12px;
+            border-radius: 20px;
+            font-weight: bold;
+
+            animation: pulse 1s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            25% { transform: scale(1.1); }
+            50% { transform: scale(1); }
+            75% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        @keyframes blink {
+        0% {opacity: 1;}
+        50% {opacity: 0.4;}
+        100% {opacity: 1;}
+    }
+
+    .badge2{
+    position: absolute;
+    top: -20px;
+    right: 0px;
+    background: gold;
+    color: black;
+    padding: 6px 14px;
+    font-size: 12px;
+    border-radius: 20px;
+    font-weight: bold;
+
+    animation: blink 1s infinite;
+    }
+
+        .badge{
+        animation: pulse 0.8s infinite;
+        }
+
+        .old-price {
+            text-decoration: line-through;
+            color: gray;
+        }
+
+        .price {
+            color: #e60023;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .stock {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #ff0000;
+        }
+
+        button {
+            margin-top: 15px;
+            background-color: #ff5722;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            color: white;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover{
+            background-color: #e64a19;
+        }
+
+        .popup {
+            position: fixed;
+            bottom : 20px;
+            left: 20px;
+            background: white;
+            padding: 12px 18px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            font-size: 14px;
+            display: none;
+            animation: fadeIn 0.5s;
+        }
+    .section-title{
+    text-align: center;
+    margin-top: 50px;
+    }
+
+    .section-title h2{
+    font-size: 28px;
+    color: #333;
+    }
+
+.section-title p{
+    color: gray;
+    font-size: 14px;
+}
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+        
+        
+        }
+    </style>
+</head>
+
+<body>
+<div class = "header">
+    <h2>🔥XXX🔥</h2>
+    <div class = "countdown" id="timer"></div>
+    </div>    
+
+    <div class="section-title">
+    <h2>IELTS Preparation Packages</h2>
+    <p>Pilih program terbaik untuk meningkatkan skor IELTS Anda</p>
+    </div>
+
+
+    
+
+    <div class="container">
+        <div class="card">
+            <div class="badge">Diskon 40%</div>
+            <div class="badge2">💥BEST SELLER💥</div>
+
+            <h3>IELTS Starter</h3>
+            <div class ="rating">
+                ⭐⭐⭐⭐⭐ (124 review)
+            </div>
+            <p class="old-price">Rp2.299.00</p>
+            <p class="price">Rp1.800.000</p>
+            <p>Durasi : 4 minggu</p>
+            <p>Program dasar untuk memahami format IELTS dan meningkatkan kemampuan Listening, Reading, Writing, dan Speaking dengan kelas interaktif serta roadmap belajar personal.</p>
+            <div class="stock" id="stockText">Sisa 5 kursi</div>
+            <div class="viewer" id="viewerText">20 orang sedang melihat produk ini</div>
+            <button onclick="beli()">Ambil Sekarang</button>
+        </div>
+ 
+
+        <div class="card">
+            <div class="badge">Diskon 40%</div>
+            <div class="badge2">💥BEST SELLER💥</div>
+
+            <h3>IELTS Standard </h3>
+            <div class ="rating">
+                ⭐⭐⭐⭐⭐ (164 review)
+            </div>
+            <p class="old-price">Rp2.299.00</p>
+            <p class="price">Rp4.500.000</p>
+            <p>Durasi : 7 minggu</p>
+            <p>Program persiapan IELTS paling populer dengan latihan intensif, official mock tests, sesi strategi dengan tutor senior, dan akses ke bank soal premium</p>
+            <div class="stock" id="stockText">Sisa 5 kursi</div>
+            <div class="viewer" id="viewerText">20 orang sedang melihat produk ini</div>
+            <button onclick="beli()">Ambil Sekarang</button>
+        </div>
+
+        <div class="card">
+            <!-- <div class="badge">Diskon 40%</div>
+            <div class="badge2">💥BEST SELLER💥</div> -->
+
+            <h3>IELTS Pro </h3>
+            <div class ="rating">
+                ⭐⭐⭐⭐⭐ (164 review)
+            </div>
+            <!-- <p class="old-price">Rp2.299.00</p> -->
+            <p class="price">Rp5.500.000</p>
+            <p>Durasi : 8 minggu</p>
+            <p>Masterclass IELTS untuk peserta yang menargetkan skor tinggi dengan mock test lebih banyak, pelatihan Writing & Speaking intensif, serta feedback personal dari tutor.</p>
+            <div class="stock" id="stockText">Sisa 5 kursi</div>
+            <div class="viewer" id="viewerText">20 orang sedang melihat produk ini</div>
+            <button onclick="beli()">Ambil Sekarang</button>
+        </div>
+
+        <div class="card">
+            <!-- <div class="badge">Diskon 40%</div>
+            <div class="badge2">💥BEST SELLER💥</div> -->
+
+            <h3>IELTS Private </h3>
+            <div class ="rating">
+                ⭐⭐⭐⭐⭐ (164 review)
+            </div>
+            <!-- <p class="old-price">Rp2.299.00</p> -->
+            <p class="price">Rp10.500.000</p>
+            <p>Durasi : 8 minggu </p>
+            <p>Program coaching privat dengan high-score tutor, strategi personal, dan feedback tanpa batas untuk membantu peserta mencapai skor IELTS maksimal.</p>
+            <div class="stock" id="stockText">Sisa 5 kursi</div>
+            <div class="viewer" id="viewerText">20 orang sedang melihat produk ini</div>
+            <button onclick="beli()">Ambil Sekarang</button>
+        </div>
+</div>
+    
+    <div class="section-title">
+    <h2>TOEFL ITP Preparation Packages</h2>
+    <p>Pilih program terbaik untuk meningkatkan skor TOEFL ITP Anda</p>
+    </div>
+
+
+
+    <div id="popup" class="popup">
+        <span id="popupText"></span>
+
+    </div>
+
+    <script>
+
+        //simulasi pembelian user
+
+        let nama = ["Andi","Budi","Siti","Ria"];
+        let kota = ["Jakarta","Bandung","Bali","Pontianak"];
+
+        function showPopup(){
+            let randomNama = nama[Math.floor(Math.random()* nama.length)];
+            let randomKota= kota[Math.floor(Math.random()*kota.length)];
+
+            let text = randomNama+ " dari " + randomKota + " baru saja membeli ";
+
+            document.getElementById("popupText").innerHTML = text;
+
+            let popup = document.getElementById("popup");
+            popup.style.display = "block";
+
+            setTimeout(function(){
+                popup.style.display = "none";
+            }, 3000);
+
+        }
+
+        //muncul tiap 8 detik
+
+        setInterval(showPopup, 8000);
+
+        //countdown 3 menit
+
+        let countDownDate = new Date().getTime() + (3*60*1000);
+
+        let timer = setInterval(function() {
+        let now = new Date().getTime();
+        let distance = countDownDate - now;
+
+        let minutes = Math.floor((distance%(1000*60*60))/(1000*60));
+        let seconds = Math.floor((distance%(1000*60))/1000);
+
+        document.getElementById("timer").innerHTML = 
+        "Promo Berakhir Dalam :" + minutes + "m" + seconds + "s";
+
+        if(distance<0){
+            clearInterval(timer);
+            document.getElementById("timer").innerHTML =
+            "PROMO TELAH BERAKHIR";
+        }
+
+         },1000 );
+
+         //==stock terbatas==
+        
+         let stok = 5;
+
+         function beli(){
+            if(stok>0){
+                stok--;
+                document.getElementById("stockText").innerHTML =
+                "Sisa " + stok + "kursi";
+
+                if(stok==0){
+                    document.getElementById("stockText").innerHTML =
+                    "KELAS HABIS"
+                }
+            }
+         }
+    </script>
+
+
+
+
+
+
+
+
+
+</body>
+
+    </main>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
