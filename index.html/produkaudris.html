@@ -133,18 +133,18 @@ min-height:420px;
 
         button {
             margin-top: 15px;
-            background-color: #800000;
+            background-color: #fccb06;
             border: none;
             padding: 10px;
             width: 100%;
-            color: white;
+            color: black;
             border-radius: 6px;
             cursor: pointer;
             font-size: 16px;
         }
 
         button:hover{
-            background-color: #e64a19;
+            background-color: #e6b800;
         }
 
         .popup {
@@ -194,6 +194,7 @@ min-height:420px;
 }
 
     .toefl-banner img {
+    margin-top: -40px;
     max-width: 400px;    /* Atur lebar maksimal gambar */
     width: 90%;          /* Agar responsif di layar HP */
     height: auto;
@@ -201,6 +202,18 @@ min-height:420px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* Opsional: memberi efek bayangan */
    -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
     mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+    }
+
+    .toeflarea {
+   display: flex;
+    align-items: flex-start;
+    max-width: 1300px;
+    margin: 50px; /* Angka 50px ini buat nurunin jarak dari Judul TOEFL */
+            /* Angka 50px ini buat kasih jarak antara Gambar dan Kartu */
+    }
+
+
+
         @keyframes fadeIn {
             from {
                 opacity: 0;
@@ -309,69 +322,45 @@ min-height:420px;
         </div>
 </div>
     
-    <div class="section-title">
-    <h2><b>TOEFL ITP Preparation Packages</b></h2>
-    <p>Pilih program terbaik untuk meningkatkan skor TOEFL ITP Anda</p>
+   <div class="section-title">
+        <h2><b>TOEFL ITP Preparation Packages</b></h2>
+        <p>Pilih program terbaik untuk meningkatkan skor TOEFL ITP Anda</p>
     </div>
 
-    <div class="toefl-banner">
-        <img src="image/toefl.png" alt="TOEFL Preparation Banner">
-    </div>
-    </div>
-
-     <div class="container">
-        <div class="card">
-            <!-- <div class="badge">Diskon 40%</div>
-            <div class="badge2">💥BEST SELLER💥</div> -->
-
-            <h3><b>IELTS Starter</b></h3>
-            <div class ="rating">
-                ⭐⭐⭐⭐⭐ (124 review)
-            </div>
-            <!-- <p class="old-price">Rp2.299.00</p> -->
-            <p class="price">Rp1.800.000</p>
-            <p>Durasi : 4 minggu</p>
-            <p>Program dasar untuk memahami format ujian dan mengasah empat skill utama. Dilengkapi kelas interaktif serta roadmap belajar personal yang terukur bagi pemula.</p>
-            <!-- <div class="stock" id="stockText">Sisa 5 kursi</div>
-            <div class="viewer" id="viewerText">20 orang sedang melihat produk ini</div> -->
-            <button onclick="beli()">Ambil Sekarang</button>
-        </div>
- 
-
-        <div class="card">
-            <!-- <div class="badge">Diskon 40%</div>
-            <div class="badge2">💥BEST SELLER💥</div> -->
-
-            <h3><b>IELTS Standard</b></h3>
-            <div class ="rating">
-                ⭐⭐⭐⭐⭐ (164 review)
-            </div>
-            <!-- <p class="old-price">Rp2.299.00</p> -->
-            <p class="price">Rp4.500.000</p>
-            <p>Durasi : 7 minggu</p>
-            <p>Program populer dengan latihan soal intensif dan akses bank soal premium. Termasuk sesi strategi bersama tutor senior serta simulasi official mock test resmi.</p>
-            <!-- <div class="stock" id="stockText">Sisa 5 kursi</div>
-            <div class="viewer" id="viewerText">20 orang sedang melihat produk ini</div> -->
-            <button onclick="beli()">Ambil Sekarang</button>
+    <div class="toeflarea">
+        
+        <div class="toefl-banner">
+            <img src="image/toefl.png" alt="TOEFL Preparation Banner">
         </div>
 
-        <div class="card">
-            <!-- <div class="badge">Diskon 40%</div>
-            <div class="badge2">💥BEST SELLER💥</div> -->
-
-            <h3><b>IELTS Pro</b></h3>
-            <div class ="rating">
-                ⭐⭐⭐⭐⭐ (164 review)
+        <div class="container" style="grid-template-columns: repeat(3, 1fr); margin: 0; flex: 1;">
+            <div class="card">
+                <h3><b>TOEFL Starter</b></h3>
+                <div class ="rating">⭐⭐⭐⭐⭐ (111 review)</div>
+                <p class="price">Rp2.500.000</p>
+                <p>Durasi : 4 minggu</p>
+                <p>Program dasar untuk memahami format ujian TOEFL.</p>
+                <button onclick="beli()">Ambil Sekarang</button>
             </div>
-            <!-- <p class="old-price">Rp2.299.00</p> -->
-            <p class="price">Rp5.500.000</p>
-            <p>Durasi : 8 minggu</p>
-            <p>Masterclass khusus target skor tinggi dengan simulasi tes lebih banyak. Fokus pada pelatihan intensif serta feedback personal mendalam dari tutor ahli.</p>
-            <!-- <div class="stock" id="stockText">Sisa 5 kursi</div>
-            <div class="viewer" id="viewerText">20 orang sedang melihat produk ini</div> -->
-            <button onclick="beli()">Ambil Sekarang</button>
-        </div>
-</div>
+
+            <div class="card">
+                <h3><b>TOEFL Standard</b></h3>
+                <div class ="rating">⭐⭐⭐⭐⭐ (164 review)</div>
+                <p class="price">Rp3.500.000</p>
+                <p>Durasi : 6 minggu</p>
+                <p>Latihan soal intensif dan strategi senior.</p>
+                <button onclick="beli()">Ambil Sekarang</button>
+            </div>
+
+            <div class="card">
+                <h3><b>TOEFL Private</b></h3>
+                <div class ="rating">⭐⭐⭐⭐⭐ (164 review)</div>
+                <p class="price">Rp7.500.000</p>
+                <p>Durasi : 6 minggu</p>
+                <p>Feedback personal mendalam dari tutor ahli.</p>
+                <button onclick="beli()">Ambil Sekarang</button>
+            </div>
+        </div> </div>
  
 
     <div id="popup" class="popup">
