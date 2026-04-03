@@ -182,9 +182,25 @@ min-height:420px;
     .section-title p {
     color: #f5f5f5;           /* Warna putih agak abu agar elegan */
     font-size: 16px;
-    margin-bottom: 
-    ;
+    margin-bottom: 0;
     }
+
+    .toefl-banner {
+    margin-top: 50px;
+    margin: left 10px;
+    display: flex;
+    justify-content: left;
+    padding-left: 25px; /* Memberi jarak dari sisi kiri halaman */
+}
+
+    .toefl-banner img {
+    max-width: 400px;    /* Atur lebar maksimal gambar */
+    width: 90%;          /* Agar responsif di layar HP */
+    height: auto;
+    border-radius: 15px; /* Opsional: agar sudut gambar melengkung cantik */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* Opsional: memberi efek bayangan */
+   -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
         @keyframes fadeIn {
             from {
                 opacity: 0;
@@ -298,6 +314,64 @@ min-height:420px;
     <p>Pilih program terbaik untuk meningkatkan skor TOEFL ITP Anda</p>
     </div>
 
+    <div class="toefl-banner">
+        <img src="image/toefl.png" alt="TOEFL Preparation Banner">
+    </div>
+    </div>
+
+     <div class="container">
+        <div class="card">
+            <!-- <div class="badge">Diskon 40%</div>
+            <div class="badge2">💥BEST SELLER💥</div> -->
+
+            <h3><b>IELTS Starter</b></h3>
+            <div class ="rating">
+                ⭐⭐⭐⭐⭐ (124 review)
+            </div>
+            <!-- <p class="old-price">Rp2.299.00</p> -->
+            <p class="price">Rp1.800.000</p>
+            <p>Durasi : 4 minggu</p>
+            <p>Program dasar untuk memahami format ujian dan mengasah empat skill utama. Dilengkapi kelas interaktif serta roadmap belajar personal yang terukur bagi pemula.</p>
+            <!-- <div class="stock" id="stockText">Sisa 5 kursi</div>
+            <div class="viewer" id="viewerText">20 orang sedang melihat produk ini</div> -->
+            <button onclick="beli()">Ambil Sekarang</button>
+        </div>
+ 
+
+        <div class="card">
+            <!-- <div class="badge">Diskon 40%</div>
+            <div class="badge2">💥BEST SELLER💥</div> -->
+
+            <h3><b>IELTS Standard</b></h3>
+            <div class ="rating">
+                ⭐⭐⭐⭐⭐ (164 review)
+            </div>
+            <!-- <p class="old-price">Rp2.299.00</p> -->
+            <p class="price">Rp4.500.000</p>
+            <p>Durasi : 7 minggu</p>
+            <p>Program populer dengan latihan soal intensif dan akses bank soal premium. Termasuk sesi strategi bersama tutor senior serta simulasi official mock test resmi.</p>
+            <!-- <div class="stock" id="stockText">Sisa 5 kursi</div>
+            <div class="viewer" id="viewerText">20 orang sedang melihat produk ini</div> -->
+            <button onclick="beli()">Ambil Sekarang</button>
+        </div>
+
+        <div class="card">
+            <!-- <div class="badge">Diskon 40%</div>
+            <div class="badge2">💥BEST SELLER💥</div> -->
+
+            <h3><b>IELTS Pro</b></h3>
+            <div class ="rating">
+                ⭐⭐⭐⭐⭐ (164 review)
+            </div>
+            <!-- <p class="old-price">Rp2.299.00</p> -->
+            <p class="price">Rp5.500.000</p>
+            <p>Durasi : 8 minggu</p>
+            <p>Masterclass khusus target skor tinggi dengan simulasi tes lebih banyak. Fokus pada pelatihan intensif serta feedback personal mendalam dari tutor ahli.</p>
+            <!-- <div class="stock" id="stockText">Sisa 5 kursi</div>
+            <div class="viewer" id="viewerText">20 orang sedang melihat produk ini</div> -->
+            <button onclick="beli()">Ambil Sekarang</button>
+        </div>
+</div>
  
 
     <div id="popup" class="popup">
