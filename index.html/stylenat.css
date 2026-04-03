@@ -39,30 +39,74 @@ body {
 /* header dan navigasi bar */
 .navbar {
   display: flex !important;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
-  padding: 0px 5%;
+  padding: 0 6%;
   width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 10000;
+  box-sizing: border-box;
   background-color: #4a0e0e;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.logo img {
+/* Logo Styling */
+.navbar .logo {
+  font-size: 1.8rem;
+  color: white;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.navbar .logo span {
+  color: #ffd700; /* Emas untuk 'GA' */
+}
+
+.logo-img {
   height: 80px;
   width: auto;
   display: block;
 }
 
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 15px; /* Jarak antara gambar logo dan tulisan */
+}
+
+.logo-text {
+  font-size: 1.3rem;
+  color: white;
+  font-weight: 800;
+  font-family: "Poppins", sans-serif;
+}
+
+.logo-text span {
+  color: #ffd700; /* Emas untuk GA */
+}
+
 .nav-links {
   display: flex !important;
   list-style: none;
-  margin-right: 0;
+  gap: 40px;
   padding: 0;
-  margin-left: auto;
+  margin: 0;
 }
 
 .nav-links li {
   margin: 0 15px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #f5f5f5;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .nav-links a {
@@ -73,6 +117,12 @@ body {
 }
 
 .nav-links a:hover {
+  color: #ffd700;
+  transform: translateY(-2px);
+}
+
+.nav-links a:hover,
+.nav-links a.active {
   color: #ffd700;
 }
 
@@ -602,7 +652,16 @@ nav ul li a {
 
 @media screen and (max-width: 768px) {
   .navbar {
-    padding: 10px 3%;
+    padding: 10px 4%;
+  }
+
+  .logo-text {
+    font-size: 1.2rem;
+  }
+
+  .nav-links {
+    gap: 15px;
+    font-size: 0.9rem;
   }
 
   .logo-img {
