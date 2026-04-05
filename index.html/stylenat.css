@@ -484,3 +484,47 @@ nav ul li a {
     flex: 1 1 100%;
   }
 }
+
+/* punya helen */
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 50px;
+  flex-wrap: wrap;
+  background-color: #fdf9f3;
+}
+
+.info-card {
+  background-color: #4a1414; /* Warna Maroon */
+  color: white;
+  width: 300px;
+  padding: 80px 25px 40px 25px;
+  text-align: center;
+  clip-path: polygon(50% 0%, 100% 20%, 100% 100%, 0 100%, 0 20%);
+}
+
+.info-card:hover {
+  transform: translateY(-15px);
+}
+
+.info-card h2 {
+  color: #ffd700; /* Warna Emas/Kuning */
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.info-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #f0f0f0;
+}
+.info-card .icon img {
+  width: 60px;
+  height: auto;
+  margin-bottom: 10px;
+  /* Jika icon kamu warna hitam, gunakan filter ini untuk jadi emas */
+  filter: invert(82%) sepia(54%) saturate(600%) hue-rotate(1deg)
+    brightness(104%) contrast(102%);
+}
