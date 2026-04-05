@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Program Kami - TOGA Program</title>
+    <link rel="stylesheet" href="stylenat.css" />
+    <link rel="stylesheet" href="styleaudris.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-cream">
+    <header class="navbar">
+      <div class="logo-container">
+        <a href="homenat.html" class="logo-link">
+          <img src="image/logo-putih.PNG" alt="Logo" class="logo-img" />
+          <div class="logo-text">TO<span>GA</span> Program</div>
+        </a>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="homenat.html">Home</a></li>
+        <li><a href="produk.html" class="active">Produk</a></li>
+        <li><a href="about.html">Tentang Kami</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+    </header>
+
+    <header class="product-header-banner">
+      <div class="banner-content">
+        <h1>English Intensive</h1>
+        <div class="underline"></div>
+        <p>
+          Tingkatkan kemampuan bahasa Inggrismu dengan program paling
+          komprehensif.
+        </p>
+      </div>
+    </header>
+
+    <section class="section-title">
+      <h2>IELTS Preparation Packages</h2>
+      <p>
+        Program kurikulum internasional untuk membantu kamu mencapai target skor
+        impian.
+      </p>
+    </section>
+
+    <div class="product-container">
+      <div class="audris-card">
+        <div class="badge-promo">BEST SELLER</div>
+        <h3>IELTS Starter</h3>
+        <p class="price-red">Rp1.800.000</p>
+        <p>Durasi: 4 Minggu. Program dasar memahami format ujian.</p>
+        <div id="stockText1" style="color: red; font-weight: bold">
+          Sisa 5 kursi
+        </div>
+        <button class="btn-submit" onclick="beli(1)">Ambil Sekarang</button>
+      </div>
+    </div>
+
+    <div class="toeflarea">
+      <div class="banner-img">
+        <img src="image/toefl.png" alt="TOEFL Banner" />
+      </div>
+      <div class="product-container" style="flex: 2">
+        <div class="audris-card">
+          <h3>TOEFL Standard</h3>
+          <p class="price-red">Rp3.500.000</p>
+          <button class="btn-submit" onclick="beli(2)">Ambil Sekarang</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="popup" class="popup-notif">
+      <span id="popupText"></span>
+    </div>
+
+    <footer class="main-footer">
+      <p>&copy; 2026 TOGA Program. Built with ❤️ by Natally & Audris.</p>
+    </footer>
+
+    <script>
+      // SCRIPT TIMER
+      let countDownDate = new Date().getTime() + 180 * 1000;
+      setInterval(function () {
+        let now = new Date().getTime();
+        let distance = countDownDate - now;
+        let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        document.getElementById("timer").innerHTML =
+          "Promo Berakhir Dalam: " + minutes + "m " + seconds + "s";
+      }, 1000);
+
+      // SCRIPT POPUP PEMBELIAN
+      let nama = ["Andi", "Budi", "Siti", "Ria"];
+      let kota = ["Jakarta", "Bandung", "Bali", "Pontianak"];
+      setInterval(function () {
+        let randomNama = nama[Math.floor(Math.random() * nama.length)];
+        let randomKota = kota[Math.floor(Math.random() * kota.length)];
+        document.getElementById("popupText").innerHTML =
+          `🔥 ${randomNama} dari ${randomKota} baru saja mendaftar!`;
+        document.getElementById("popup").style.display = "block";
+        setTimeout(() => {
+          document.getElementById("popup").style.display = "none";
+        }, 3000);
+      }, 8000);
+
+      // SCRIPT BELI
+      function beli(id) {
+        alert("Terima kasih! Menghubungkan ke admin...");
+        window.location.href = "index.html#daftar";
+      }
+    </script>
+  </body>
+</html>

@@ -1,3 +1,24 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.registration-section {
+  padding: 100px 5%;
+  display: flex;
+  justify-content: center;
+  background-color: #fdf9f3;
+}
+
+.form-container {
+  background: white;
+  width: 100%;
+  max-width: 500px;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  border-top: 8px solid #800000;
+}
+
 /* margin rapi */
 * {
   margin: 0;
@@ -18,30 +39,74 @@ body {
 /* header dan navigasi bar */
 .navbar {
   display: flex !important;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
-  padding: 0px 5%;
+  padding: 0 6%;
   width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 10000;
+  box-sizing: border-box;
   background-color: #4a0e0e;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.logo img {
+/* Logo Styling */
+.navbar .logo {
+  font-size: 1.8rem;
+  color: white;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.navbar .logo span {
+  color: #ffd700; /* Emas untuk 'GA' */
+}
+
+.logo-img {
   height: 80px;
   width: auto;
   display: block;
 }
 
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 15px; /* Jarak antara gambar logo dan tulisan */
+}
+
+.logo-text {
+  font-size: 1.3rem;
+  color: white;
+  font-weight: 800;
+  font-family: "Poppins", sans-serif;
+}
+
+.logo-text span {
+  color: #ffd700; /* Emas untuk GA */
+}
+
 .nav-links {
   display: flex !important;
   list-style: none;
-  margin-right: 0;
+  gap: 40px;
   padding: 0;
-  margin-left: auto;
+  margin: 0;
 }
 
 .nav-links li {
   margin: 0 15px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #f5f5f5;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .nav-links a {
@@ -52,6 +117,12 @@ body {
 }
 
 .nav-links a:hover {
+  color: #ffd700;
+  transform: translateY(-2px);
+}
+
+.nav-links a:hover,
+.nav-links a.active {
   color: #ffd700;
 }
 
@@ -426,9 +497,171 @@ nav ul li a {
   color: #bbb;
 }
 
+.bg-cream {
+  background-color: #fdf9f3;
+}
+
+.form-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-header h2 {
+  color: #800000;
+  font-weight: 800;
+}
+
+.form-header p {
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #eee;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: inherit;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #800000;
+  outline: none;
+  background-color: #fff9f9;
+}
+
+.btn-submit {
+  width: 100%;
+  background-color: #800000;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-submit:hover {
+  background-color: #ffd700;
+  color: #800000;
+  transform: translateY(-3px);
+}
+
+.product-page {
+  padding: 120px 5% 80px 5%;
+  min-height: 80vh;
+  background-color: #fdf9f3;
+}
+
+.product-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.product-card {
+  background: white;
+  border: 1px solid #e0d8cc;
+  border-radius: 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 40px 30px;
+  position: relative;
+  transition: 0.4s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 20px 40px rgba(128, 0, 0, 0.2);
+  border-color: #800000;
+}
+
+.product-card.special {
+  border: 2px solid #ffd700;
+  transform: #800000;
+}
+
+.product-card h3 {
+  color: #800000;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.product-card ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.product-card ul li {
+  margin-bottom: 10px;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* Tombol Pilih */
+.btn-product {
+  display: inline-block;
+  background: #800000;
+  color: white;
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-product:hover {
+  background: #ffd700;
+  color: #800000;
+}
+
+.nav-links a.active {
+  color: #ffd700;
+  font-weight: bold;
+}
+
 @media screen and (max-width: 768px) {
   .navbar {
-    padding: 10px 3%;
+    padding: 10px 4%;
+  }
+
+  .logo-text {
+    font-size: 1.2rem;
+  }
+
+  .nav-links {
+    gap: 15px;
+    font-size: 0.9rem;
   }
 
   .logo-img {
