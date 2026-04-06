@@ -582,6 +582,7 @@ nav ul li a {
 
 .product-grid {
   display: flex;
+  align-items: stretch;
   justify-content: center;
   gap: 30px;
   flex-wrap: wrap;
@@ -597,6 +598,10 @@ nav ul li a {
   padding: 40px 30px;
   position: relative;
   transition: 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
 .product-card:hover {
@@ -648,6 +653,12 @@ nav ul li a {
   transition: 0.3s;
 }
 
+.btn-product,
+.product-card button,
+.product-card .btn-ambil {
+  margin-top: auto;
+}
+
 .btn-product:hover {
   background: #ffd700;
   color: #800000;
@@ -658,30 +669,112 @@ nav ul li a {
   font-weight: bold;
 }
 
+#menu-toggle,
+.hamburger {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 15px;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    margin-bottom: 0;
+    border: none;
+  }
+
   .navbar {
-    padding: 10px 4%;
+    background-color: #800000 !important;
+    padding: 10px 20px !important;
+    height: 70px !important; /* Beri ruang yang pasti */
+    display: flex !important;
+    justify-content: space-between !important;
+  }
+
+  .hamburger {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 28px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 10001;
+  }
+
+  .hamburger span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #fffaf5 !important; /* WARNA KREM (Match dengan background website) */
+    border-radius: 10px;
+    transition: 0.3s ease;
   }
 
   .logo-text {
-    font-size: 1.2rem;
+    font-size: 10px;
   }
 
   .nav-links {
-    gap: 15px;
-    font-size: 0.9rem;
+    background-color: #800000 !important;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #4a0000;
+    display: none; /* Sembunyi dulu */
+    flex-direction: column;
+    padding: 20px 0;
+    border-top: 1px solid rgba(255, 250, 245, 0.1);
   }
 
   .logo-img {
-    height: 35px;
+    height: 30px;
   }
 
   .nav-links a {
-    font-size: 13px;
+    color: #fffaf5 !important; /* Tulisan jadi Krem */
+    text-align: left;
+    display: block;
+    padding: 15px 0;
+    font-size: 25px;
+    text-decoration: none;
   }
 
   .nav-links li {
-    margin-left: 15px;
+    width: 100%;
+    margin: 0 !important;
+    text-align: center;
+  }
+
+  #menu-toggle {
+    display: none !important;
+  }
+
+  #menu-toggle:checked ~ .nav-links {
+    display: flex;
+  }
+
+  #menu-toggle:checked ~ .hamburger span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 6px);
+  }
+  #menu-toggle:checked ~ .hamburger span:nth-child(2) {
+    opacity: 0;
+  }
+  #menu-toggle:checked ~ .hamburger span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -6px);
+  }
+
+  .nav-links li a {
+    color: #fffaf5 !important;
+    font-size: 1rem !important; /* Jangan kegedean 25px, nanti layar penuh */
+    padding: 15px !important;
+    display: block !important;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   }
 
   .toga-icon {

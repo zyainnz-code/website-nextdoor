@@ -63,10 +63,11 @@
   padding: 30px 20px;
   text-align: center;
   position: relative;
-  display: flex;
-  flex-direction: column;
+  display: flex !important;
+  flex-direction: column !important;
   justify-content: space-between;
   min-height: 450px;
+  height: 100% !important;
   transition: 0.3s;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
 }
@@ -129,6 +130,12 @@
   width: 100%;
 }
 
+.audris-card .btn-submit {
+  margin-top: auto !important;
+  background-color: #800000;
+  color: white;
+  width: 100%;
+}
 .btn-submit:hover {
   background-color: #ffd700;
   color: #800000;
@@ -347,5 +354,22 @@
   .toefl-products {
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
+  }
+
+  .banner-img img,
+  .product-header-banner img {
+    width: 100% !important;
+    max-height: 100px !important;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  .banner-img {
+    height: auto;
+    display: block;
+    width: 100%;
   }
 }
