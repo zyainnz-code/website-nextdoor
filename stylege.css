@@ -21,20 +21,17 @@ html {
 
 /*Countdown Bar*/
 .countdown-bar {
-  background: linear-gradient(135deg, #2a0505, #0d1b2e);
-  border-top: 1px solid rgba(255, 215, 0, 0.15);
+  background: linear-gradient(to bottom, #4a0e0e, #0d1b2e);
   border-bottom: 1px solid rgba(255, 215, 0, 0.15);
-  padding: 16px 5%;
-  width: 100%;
 }
 
 .countdown-bar-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
+  padding: 14px 5%;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
   gap: 20px;
-  flex-wrap: wrap;
+  width: 100%;
 }
 
 .countdown-icon {
@@ -46,49 +43,69 @@ html {
   flex: 1;
 }
 
-.countdown-title {
+.countdown-badge {
+  background: rgba(255, 215, 0, 0.15);
   color: #ffd700;
-  font-size: 0.95rem;
+  font-size: 9px;
+  font-weight: 700;
+  padding: 2px 10px;
+  border-radius: 20px;
+  display: inline-block;
+  width: fit-content;
+  letter-spacing: 0.5px;
+}
+
+.countdown-title {
+  color: white;
+  font-size: 1rem;
   font-weight: 800;
-  margin-bottom: 10px;
 }
 
 .countdown-timers {
   display: flex;
   align-items: center;
-  gap: 6px;
+  justify-content: center;
+  gap: 5px;
 }
 
 .countdown-box {
-  background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(4px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.3);
   border-radius: 8px;
-  padding: 6px 10px;
+  padding: 8px 10px;
   text-align: center;
   min-width: 52px;
+  border-bottom: 2px solid #ffd700;
 }
 
 .countdown-box span:first-child {
   display: block;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 800;
   color: white;
   line-height: 1;
 }
 
 .cd-unit {
+  font-size: 0.6rem;
   color: rgba(255, 255, 255, 0.4);
-  font-size: 0.65rem;
   display: block;
   margin-top: 3px;
+  letter-spacing: 0.5px;
 }
 
 .cd-sep {
-  color: rgba(255, 215, 0, 0.6);
-  font-size: 1.3rem;
+  color: #ffd700;
+  font-size: 1.2rem;
   font-weight: 800;
-  padding-bottom: 16px;
+  padding-bottom: 14px;
+}
+
+.countdown-left {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  justify-self: start;
+  margin-left: 0; /* remove any margin */
 }
 
 .countdown-right {
@@ -99,35 +116,41 @@ html {
 }
 
 .countdown-loc {
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 0.82rem;
-  line-height: 1.6;
-  text-align: right;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 0.75rem;
+  margin-top: 1px;
 }
 
 .countdown-cta {
-  background: transparent;
-  border: 1.5px solid #ffd700;
-  color: #ffd700;
+  justify-self: end;
+  background: #ffd700;
+  color: #800000;
   font-size: 0.88rem;
-  font-weight: 700;
-  padding: 9px 20px;
+  font-weight: 800;
+  padding: 10px 20px;
+  border: none;
   border-radius: 8px;
   cursor: pointer;
   white-space: nowrap;
   font-family: 'Poppins', sans-serif;
   transition: 0.3s;
+  width: fit-content; /* don't stretch */
 }
 
 .countdown-cta:hover {
-  background: #ffd700;
-  color: #800000;
+  transform: translateY(-2px);
+  background: #ffe84d;
 }
 
 @media screen and (max-width: 768px) {
   .countdown-bar-inner {
     flex-direction: column;
     align-items: flex-start;
+    gap: 12px;
+  }
+  .countdown-cta {
+    width: 100%;
+    text-align: center;
   }
   .countdown-right {
     width: 100%;
@@ -771,7 +794,7 @@ nav ul li a {
 
 /* Info card kanan */
 .features-infocard {
-  background: #800000;
+  background: #4a0e0e;
   border-radius: 16px;
   padding: 24px;
 }
@@ -1047,7 +1070,7 @@ nav ul li a {
 /* reviews */
 .reviews {
   padding: 40px 5% 60px 5%; /* reduce top and bottom padding */
-  background-color: #800000;
+  background-color: #4a0e0e;
   text-align: center;
 }
 
@@ -1488,4 +1511,97 @@ nav ul li a {
 
 .hero-slideshow-full:hover .slide-arrow {
   opacity: 1;
+}
+
+/* app section */
+.app-section {
+  padding: 50px 5% 50px 5%; /* shorter top and bottom */
+  background-color: #fdf9f3;
+}
+
+.app-title {
+  text-align: center;
+  color: #800000;
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-bottom: 20px; /* reduce space below title */
+  letter-spacing: 2px;
+}
+
+.app-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px; /* less space between text and mockup */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.app-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.app-headline {
+  font-size: 2.8rem; /* bigger text */
+  font-weight: 800;
+  color: #800000;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.app-headline strong {
+  color: #4a0e0e;
+}
+
+.app-buttons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.app-store-btn {
+  height: 64px; /* bigger buttons */
+  width: auto;
+  display: block;
+  border-radius: 10px;
+  transition: transform 0.2s;
+}
+
+.app-store-btn:hover {
+  transform: translateY(-3px);
+}
+
+.app-right {
+  flex: 0 0 auto; /* don't stretch */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: -5%; /* push all the way to the right edge */
+}
+
+.app-mockup {
+  width: auto;
+  max-width: 500px; /* bigger mockup */
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 24px 48px rgba(0,0,0,0.15));
+}
+
+@media screen and (max-width: 768px) {
+  .app-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .app-buttons {
+    justify-content: center;
+  }
+  .app-right {
+    width: 100%;
+  }
+  .app-headline {
+    font-size: 1.6rem;
+  }
 }
