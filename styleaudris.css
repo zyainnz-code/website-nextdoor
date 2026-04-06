@@ -1,0 +1,351 @@
+/* --- CSS KHUSUS PRODUK AUDRIS --- */
+.product-header-banner {
+  background-image:
+    linear-gradient(rgba(128, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    url("image/happyasian.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f5f5f5;
+  padding: 100px 20px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.banner-content h1 {
+  font-size: 3.5rem; /* Ukuran tulisan diperbesar biar fokus */
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+  text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.underline {
+  height: 5px;
+  width: 80px;
+  background-color: #ffd700; /* Warna Emas */
+  margin: 0 auto 20px auto;
+  border-radius: 10px;
+}
+
+.banner-content p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  max-width: 600px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+.countdown {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ffcc00;
+  margin-top: 10px;
+}
+
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto 80px auto;
+  padding: 0 20px;
+}
+
+.audris-card {
+  background: white;
+  border-radius: 25px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px 20px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 450px;
+  transition: 0.3s;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+}
+
+.audris-card:hover {
+  transform: translateY(-10px);
+  border-color: #800000;
+  box-shadow: 0 20px 40px rgba(128, 0, 0, 0.2);
+}
+
+.audris-card h3 {
+  color: #800000;
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.rating {
+  color: #ffd700; /* Emas untuk Bintang */
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.price-red {
+  color: #333;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.duration-tag {
+  display: inline-block;
+  background: #fdf2f2;
+  color: #800000;
+  padding: 5px 15px;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.audris-card p {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.btn-submit {
+  background-color: #800000;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.btn-submit:hover {
+  background-color: #ffd700;
+  color: #800000;
+  transform: scale(1.02);
+}
+
+/* Animasi Badge Audris */
+.badge-promo {
+  position: absolute;
+  top: -15px;
+  left: 10px;
+  background: red;
+  color: white;
+  padding: 8px 12px;
+  font-size: 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Layout TOEFL & PTE Area */
+.toeflarea,
+.pte-area {
+  display: flex;
+  align-items: center;
+  max-width: 1300px;
+  margin: 0 auto 100px auto;
+  gap: 30px;
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+
+.banner-img {
+  flex: 1;
+  min-width: 300px;
+  position: relative;
+  overflow: hidden;
+  mask-image: linear-gradient(to bottom, black 65%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 65%, transparent 100%);
+  box-shadow: none;
+}
+
+.banner-img img {
+  width: 100%;
+  border-radius: 25px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+}
+
+.promo-badge {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: #ffd700;
+  color: #800000;
+  padding: 8px 15px;
+  border-radius: 50px;
+  font-weight: 800;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+.toefl-products {
+  flex: 2.5;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.toefl-mini {
+  padding: 30px 20px !important;
+  min-height: 400px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.toefl-mini h3 {
+  font-size: 1.2rem !important;
+}
+
+.toefl-mini .price-red {
+  font-size: 1.5rem !important;
+  color: #333 !important;
+  font-weight: 900;
+}
+
+.toefl-mini .desc {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.section-title {
+  background-color: #800000;
+  color: white;
+  width: 100vw !important;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw !important;
+  margin-right: -50vw !important;
+  text-align: center;
+  padding: 20px 25px;
+  box-sizing: border-box;
+  display: block;
+  border: none;
+}
+
+.section-title h2 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+.section-title p {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  text-align: center !important;
+  max-width: 800px;
+}
+
+@media screen and (max-width: 768px) {
+  .banner-content h1 {
+    font-size: 2.2rem;
+  }
+  .product-header-banner {
+    height: 250px;
+  }
+
+  .section-title h2 {
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+  .section-title {
+    margin: 40px 20px;
+  }
+
+  .section-title p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .product-container {
+    gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 15px;
+    margin-bottom: 50px;
+  }
+
+  .audris-card {
+    padding: 25px 15px;
+    min-height: auto;
+    border-radius: 15px;
+  }
+
+  .audris-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+  }
+
+  .rating {
+    font-size: 0.7rem;
+    margin-bottom: 10px;
+  }
+
+  .price-red {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+  }
+
+  .duration-tag {
+    font-size: 0.7rem;
+    padding: 3px 10px;
+    margin-bottom: 15px;
+  }
+
+  .audris-card p {
+    font-size: 0.8rem; /* Deskripsi lebih kecil */
+    margin-bottom: 20px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* batas 3 baris */
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .btn-submit {
+    padding: 10px;
+    font-size: 0.8rem;
+    border-radius: 8px;
+  }
+
+  .toefl-products {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+}

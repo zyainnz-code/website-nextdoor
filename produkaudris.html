@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="stylenat.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+
+
+    <title>English Course</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif; /* Mengubah semua tulisan jadi Poppins */
+    background-color: #f5f5f5;
+    margin: 0;
+        }
+
+        .header {
+            background-image: linear-gradient(
+        rgba(128, 0, 0, 0.7), /* Maroon dengan 80% opacity */
+        rgba(0, 0, 0, 0.5)    /* Hitam dengan 70% opacity */
+    ),url('image/happyasian.jpg');
+            background-size: cover;
+            background-position: center;
+    `       background-attachment: fixed;
+            color: #f5f5f5;
+            padding: 90px;
+            text-align: center;
+        }
+
+        .countdown {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+       .container{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:25px;
+max-width:1300px;
+margin:40px auto;
+padding:10px;
+}
+
+.card{
+font-size:13px;
+line-height:1.4;
+background:white;
+border-radius:12px;
+box-shadow:0 6px 15px rgba(0,0,0,0.1);
+padding:30px 25px;
+text-align:center;
+position:relative;
+
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+
+min-height:420px;
+}
+
+.logoproduk img {
+  height: auto;
+  width: 130px;
+  display: block;
+}
+        .badge {
+            position: absolute;
+            top: -20px;
+            left: 0px;
+            background: red;
+            color: white;
+            padding: 10px 16px;
+            font-size: 12px;
+            border-radius: 20px;
+            font-weight: bold;
+
+            animation: pulse 1s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            25% { transform: scale(1.1); }
+            50% { transform: scale(1); }
+            75% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        @keyframes blink {
+        0% {opacity: 1;}
+        50% {opacity: 0.4;}
+        100% {opacity: 1;}
+    }
+
+    .badge2{
+    position: absolute;
+    top: -20px;
+    right: 0px;
+    background: gold;
+    color: black;
+    padding: 6px 14px;
+    font-size: 12px;
+    border-radius: 20px;
+    font-weight: bold;
+
+    animation: blink 1s infinite;
+    }
+
+        .badge{
+        animation: pulse 0.8s infinite;
+        }
+
+        .old-price {
+            text-decoration: line-through;
+            color: gray;
+        }
+
+        .price {
+            color: #e60023;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .stock {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #ff0000;
+        }
+
+        button {
+            margin-top: 15px;
+            background-color: #fccb06;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            color: black;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover{
+            background-color: #e6b800;
+        }
+
+        .popup {
+            position: fixed;
+            bottom : 20px;
+            left: 20px;
+            background: white;
+            padding: 12px 18px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            font-size: 14px;
+            display: none;
+            animation: fadeIn 0.5s;
+        }
+   .section-title {
+    text-align: center;
+    margin-top: 50px;
+    padding: 30px 20px;       /* Memberi ruang di dalam kotak warna */
+    background-color: #800000; /* Warna Maroon */
+    color: white;             /* Mengubah semua teks di dalamnya jadi putih agar kontras */
+    border-radius: 8px;       /* Membuat sudut kotak sedikit melengkung */
+    max-width: 1300px;        /* Menyamakan lebar dengan container card */
+    margin-left: auto;        /* Mengetengahkan kotak */
+    margin-right: auto;
+    }
+
+    /* Mengatur warna judul h2 di dalam section-title */
+    .section-title h2 {
+    font-size: 28px;
+    color: #ffffff;           /* Pastikan warna teks putih */
+    margin-bottom: 10px;
+    }
+
+/* Mengatur warna deskripsi p di dalam section-title */
+    .section-title p {
+    color: #f5f5f5;           /* Warna putih agak abu agar elegan */
+    font-size: 16px;
+    margin-bottom: 0;
+    }
+
+    .toefl-banner {
+    margin-top: 50px;
+    margin: left 10px;
+    display: flex;
+    justify-content: left;
+    padding-left: 25px; /* Memberi jarak dari sisi kiri halaman */
+}
+
+    .toefl-banner img {
+    margin-top: -40px;
+    max-width: 400px;    /* Atur lebar maksimal gambar */
+    width: 90%;          /* Agar responsif di layar HP */
+    height: auto;
+    margin: 40px auto /;
+    border-radius: 15px; /* Opsional: agar sudut gambar melengkung cantik */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* Opsional: memberi efek bayangan */
+   -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+    }
+
+    .toeflarea {
+   display: flex;
+    align-items: flex-start;
+    max-width: 1300px;
+    margin: 40px auto; /* Angka 50px ini buat nurunin jarak dari Judul TOEFL */
+            /* Angka 50px ini buat kasih jarak antara Gambar dan Kartu */
+    padding: 10px;
+    }
+/* CSS Khusus PTE Area */
+    .pte-area {
+        display: flex;
+        align-items: flex-start; /* Biar rata atas antara kartu & gambar */
+        max-width: 1300px;
+        margin: 50px auto;
+        gap: 40px; /* Jarak antara kartu dan gambar */
+        padding: 0 10px;
+    }
+
+    .pte-banner {
+        flex: 0 0 400px; /* Kunci lebar area gambar */
+    }
+
+    .pte-banner img {
+        width: 100%;
+        height: auto;
+        border-radius: 15px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        /* Masking agar gradasinya nyambung (Kebalikan dari TOEFL) */
+        -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+        mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+    }
+
+    /* Memastikan kartu PTE punya tinggi yang sama */
+    .pte-area .card {
+        min-height: 450px; /* Sedikit lebih tinggi biar lega */
+    }
+
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+        
+        
+        }
+
+
+    </style>
+</head>
+
+<body>
+    
+<div class = "header">
+     <div class="logoproduk">
+        <img src="image/logo-cream.PNG" alt="English Next Door Logo" />
+      </div>
+
+    <h2><b>English Insentive</b><h2>
+    <!-- <div class = "countdown" id="timer"></div> -->
+    </div>    
+
+    <div class="section-title">
+    <h2><b>IELTS Preparation Packages</b></h2>
+    <p>Pilih program terbaik untuk meningkatkan skor IELTS Anda</p>
+    </div>
+
+
+    
+
+    <div class="container">
+        <div class="card">
+            <!-- <div class="badge">Diskon 40%</div>
+            <div class="badge2">💥BEST SELLER💥</div> -->
+
+            <h3><b>IELTS Starter</b></h3>
+            <div class ="rating">
+                ⭐⭐⭐⭐⭐ (124 review)
+            </div>
+            <!-- <p class="old-price">Rp2.299.00</p> -->
+            <p class="price">Rp1.800.000</p>
+            <p>Durasi : 4 minggu</p>
+            <p>Program dasar untuk memahami format ujian dan mengasah empat skill utama. Dilengkapi kelas interaktif serta roadmap belajar personal yang terukur bagi pemula.</p>
+            <!-- <div class="stock" id="stockText">Sisa 5 kursi</div>
+            <div class="viewer" id="viewerText">20 orang sedang melihat produk ini</div> -->
+            <button onclick="beli()">Ambil Sekarang</button>
+        </div>
+ 
+
+        <div class="card">
+            <!-- <div class="badge">Diskon 40%</div>
+            <div class="badge2">💥BEST SELLER💥</div> -->
+
+            <h3><b>IELTS Standard</b></h3>
+            <div class ="rating">
+                ⭐⭐⭐⭐⭐ (164 review)
+            </div>
+            <!-- <p class="old-price">Rp2.299.00</p> -->
+            <p class="price">Rp4.500.000</p>
+            <p>Durasi : 7 minggu</p>
+            <p>Program populer dengan latihan soal intensif dan akses bank soal premium. Termasuk sesi strategi bersama tutor senior serta simulasi official mock test resmi.</p>
+            <!-- <div class="stock" id="stockText">Sisa 5 kursi</div>
+            <div class="viewer" id="viewerText">20 orang sedang melihat produk ini</div> -->
+            <button onclick="beli()">Ambil Sekarang</button>
+        </div>
+
+        <div class="card">
+            <!-- <div class="badge">Diskon 40%</div>
+            <div class="badge2">💥BEST SELLER💥</div> -->
+
+            <h3><b>IELTS Pro</b></h3>
+            <div class ="rating">
+                ⭐⭐⭐⭐⭐ (164 review)
+            </div>
+            <!-- <p class="old-price">Rp2.299.00</p> -->
+            <p class="price">Rp5.500.000</p>
+            <p>Durasi : 8 minggu</p>
+            <p>Masterclass khusus target skor tinggi dengan simulasi tes lebih banyak. Fokus pada pelatihan intensif serta feedback personal mendalam dari tutor ahli.</p>
+            <!-- <div class="stock" id="stockText">Sisa 5 kursi</div>
+            <div class="viewer" id="viewerText">20 orang sedang melihat produk ini</div> -->
+            <button onclick="beli()">Ambil Sekarang</button>
+        </div>
+
+        <div class="card">
+            <!-- <div class="badge">Diskon 40%</div>
+            <div class="badge2">💥BEST SELLER💥</div> -->
+
+            <h3><b>IELTS Private </b></h3>
+            <div class ="rating">
+                ⭐⭐⭐⭐⭐ (164 review)
+            </div>
+            <!-- <p class="old-price">Rp2.299.00</p> -->
+            <p class="price">Rp10.500.000</p>
+            <p>Durasi : 8 minggu </p>
+            <p>Program bimbingan privat eksklusif bersama high-score tutor untuk hasil maksimal. Fokus pada strategi personal dan dukungan feedback tanpa batas setiap sesi.</p>
+            <!-- <div class="stock" id="stockText">Sisa 5 kursi</div>
+            <div class="viewer" id="viewerText">20 orang sedang melihat produk ini</div> -->
+            <button onclick="beli()">Ambil Sekarang</button>
+        </div>
+</div>
+    
+   <div class="section-title">
+        <h2><b>TOEFL ITP Preparation Packages</b></h2>
+        <p>Pilih program terbaik untuk meningkatkan skor TOEFL ITP Anda</p>
+    </div>
+
+    <div class="toeflarea">
+        
+        <div class="toefl-banner">
+            <img src="image/toefl.png" alt="TOEFL Preparation Banner">
+        </div>
+
+        <div class="container" style="grid-template-columns: repeat(3, 1fr); margin: 0; flex: 1;">
+            <div class="card">
+                <h3><b>TOEFL Starter</b></h3>
+                <div class ="rating">⭐⭐⭐⭐⭐ (111 review)</div>
+                <p class="price">Rp2.500.000</p>
+                <p>Durasi : 4 minggu</p>
+                <p>Program dasar untuk memahami format ujian TOEFL.</p>
+                <button onclick="beli()">Ambil Sekarang</button>
+            </div>
+
+            <div class="card">
+                <h3><b>TOEFL Standard</b></h3>
+                <div class ="rating">⭐⭐⭐⭐⭐ (164 review)</div>
+                <p class="price">Rp3.500.000</p>
+                <p>Durasi : 6 minggu</p>
+                <p>Latihan soal intensif dan strategi senior.</p>
+                <button onclick="beli()">Ambil Sekarang</button>
+            </div>
+
+            <div class="card">
+                <h3><b>TOEFL Private</b></h3>
+                <div class ="rating">⭐⭐⭐⭐⭐ (164 review)</div>
+                <p class="price">Rp7.500.000</p>
+                <p>Durasi : 6 minggu</p>
+                <p>Feedback personal mendalam dari tutor ahli.</p>
+                <button onclick="beli()">Ambil Sekarang</button>
+            </div>
+        </div> </div>
+ 
+
+
+ <div class="section-title">
+        <h2><b>PTE Academic Preparation Packages</b></h2>
+        <p>Pilih program terbaik untuk meningkatkan skor PTE Academic Anda</p>
+    </div>
+
+    <div class="pte-area">
+        
+        <div class="container" style="grid-template-columns: repeat(3, 1fr); margin: 0; flex: 1;">
+            <div class="card">
+                <h3><b>PTE Starter</b></h3>
+                <div class="rating">⭐⭐⭐⭐⭐ (98 review)</div>
+                <p class="price">Rp2.800.000</p>
+                <p>Durasi : 4 minggu</p>
+                <p>Bimbingan intensif pengenalan format PTE Academic berbasis AI.</p>
+                <button onclick="beli()">Ambil Sekarang</button>
+            </div>
+
+            <div class="card">
+                <h3><b>PTE Standard</b></h3>
+                <div class="rating">⭐⭐⭐⭐⭐ (142 review)</div>
+                <p class="price">Rp4.200.000</p>
+                <p>Durasi : 6 minggu</p>
+                <p>Latihan soal real-exam dengan feedback skor instan.</p>
+                <button onclick="beli()">Ambil Sekarang</button>
+            </div>
+
+            <div class="card">
+                <h3><b>PTE Private</b></h3>
+                <div class="rating">⭐⭐⭐⭐⭐ (89 review)</div>
+                <p class="price">Rp8.500.000</p>
+                <p>Durasi : 6 minggu</p>
+                <p>Bimbingan 1-on-1 fokus pada kelemahan speaking & writing.</p>
+                <button onclick="beli()">Ambil Sekarang</button>
+            </div>
+        </div>
+
+        <div class="pte-banner">
+            <img src="image/pte.png" alt="PTE Academic Banner">
+        </div>
+
+    </div>
+
+    <div id="popup" class="popup">
+        <span id="popupText"></span>
+
+    </div>
+
+    <script>
+
+        //simulasi pembelian user
+
+        let nama = ["Andi","Budi","Siti","Ria"];
+        let kota = ["Jakarta","Bandung","Bali","Pontianak"];
+
+        function showPopup(){
+            let randomNama = nama[Math.floor(Math.random()* nama.length)];
+            let randomKota= kota[Math.floor(Math.random()*kota.length)];
+
+            let text = randomNama+ " dari " + randomKota + " baru saja membeli ";
+
+            document.getElementById("popupText").innerHTML = text;
+
+            let popup = document.getElementById("popup");
+            popup.style.display = "block";
+
+            setTimeout(function(){
+                popup.style.display = "none";
+            }, 3000);
+
+        }
+
+        //muncul tiap 8 detik
+
+        setInterval(showPopup, 8000);
+
+        //countdown 3 menit
+
+        let countDownDate = new Date().getTime() + (3*60*1000);
+
+        let timer = setInterval(function() {
+        let now = new Date().getTime();
+        let distance = countDownDate - now;
+
+        let minutes = Math.floor((distance%(1000*60*60))/(1000*60));
+        let seconds = Math.floor((distance%(1000*60))/1000);
+
+        document.getElementById("timer").innerHTML = 
+        "Promo Berakhir Dalam :" + minutes + "m" + seconds + "s";
+
+        if(distance<0){
+            clearInterval(timer);
+            document.getElementById("timer").innerHTML =
+            "PROMO TELAH BERAKHIR";
+        }
+
+         },1000 );
+
+         //==stock terbatas==
+        
+         let stok = 5;
+
+         function beli(){
+            if(stok>0){
+                stok--;
+                document.getElementById("stockText").innerHTML =
+                "Sisa " + stok + "kursi";
+
+                if(stok==0){
+                    document.getElementById("stockText").innerHTML =
+                    "KELAS HABIS"
+                }
+            }
+         }
+    </script>
+
+
+
+<footer class="main-footer">
+      <div class="footer-container">
+        <div class="footer-about">
+          <h2 class="footer-logo">
+            <span class="text-white">TO</span
+            ><span class="text-yellow">GA</span> Program
+          </h2>
+          <p>
+            Solusi belajar bahasa Inggris dan pengembangan diri terbaik di
+            Pontianak. Berkualitas, terjangkau, dan terpercaya.
+          </p>
+        </div>
+
+        <div class="footer-contact">
+          <h3>Hubungi Kami</h3>
+          <p>alamat: Jl. Ayani, Komplek ayani Megamall no.123, Pontianak</p>
+          <p>Telepon: (0561) 123456</p>
+          <p>email: info@englishtoga.com</p>
+        </div>
+
+        <div class="footer-social">
+          <h3>Ikuti Kami</h3>
+          <div class="social-icons">
+            <a href="#">Instagram</a>
+            <a href="#">WhatsApp</a>
+            <a href="#">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 TOGA Program. All rights reserved. Hi kamuh ❤️❤️</p>
+      </div>
+    </footer>
+
+
+
+
+
+</body>
+
+    </main>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
