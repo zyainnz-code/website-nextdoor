@@ -12,8 +12,10 @@
   align-items: center;
   color: #f5f5f5;
   padding: 100px 20px;
+  padding-bottom: 50px;
   text-align: center;
   margin-top: 60px;
+  margin-bottom: 0 !important;
 }
 
 .banner-content h1 {
@@ -142,20 +144,6 @@
   transform: scale(1.02);
 }
 
-/* Animasi Badge Audris */
-.badge-promo {
-  position: absolute;
-  top: -15px;
-  left: 10px;
-  background: red;
-  color: white;
-  padding: 8px 12px;
-  font-size: 12px;
-  border-radius: 20px;
-  font-weight: bold;
-  animation: pulse 1s infinite;
-}
-
 @keyframes pulse {
   0% {
     transform: scale(1);
@@ -248,6 +236,7 @@
   position: relative;
   left: 50%;
   right: 50%;
+  margin-top: 0 !important;
   margin-left: -50vw !important;
   margin-right: -50vw !important;
   text-align: center;
@@ -255,6 +244,7 @@
   box-sizing: border-box;
   display: block;
   border: none;
+  border-top: 0;
 }
 
 .section-title h2 {
@@ -280,25 +270,197 @@
   max-width: 800px;
 }
 
+/* footer */
+.main-footer {
+  background-color: #4a0e0e;
+  color: #ffffff;
+  padding: 60px 5% 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-about,
+.footer-contact,
+.footer-social {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-logo {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.footer-logo span {
+  color: #ffd700; /* Emas */
+}
+
+.footer-container h3 {
+  color: #ffd700; /* Emas untuk judul kolom */
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+/* Garis bawah emas tipis di judul */
+.footer-container h3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 2px;
+  background-color: #ffd700;
+}
+
+.footer-container p {
+  font-size: 0.9rem;
+  line-height: 1.8;
+  color: #e0e0e0;
+  margin-bottom: 15px;
+}
+
+/* Styling Link Sosial Media */
+.social-links a {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  margin-bottom: 12px;
+  transition: 0.3s;
+  font-size: 0.95rem;
+}
+
+.social-links a:hover {
+  color: #ffd700;
+  padding-left: 8px; /* Efek geser dikit pas di-hover */
+}
+
+/* Bottom Bar */
+.footer-bottom {
+  text-align: center;
+  margin-top: 50px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-bottom p {
+  font-size: 0.8rem;
+  color: #bbb;
+}
+
+.footer-bottom span {
+  color: #ff4d4d; /* Warna hati merah */
+}
+
 @media screen and (max-width: 768px) {
+  .navbar {
+    background-color: #4a0e0e !important; /* Marun gelap sesuai kodemu */
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 10px !important;
+    height: 70px !important;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10001;
+  }
+
+  #menu-toggle {
+    display: none !important;
+  }
+
+  .hamburger {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 18px;
+    cursor: pointer;
+    z-index: 10002;
+  }
+
+  .hamburger span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #ffd700 !important; /* Pakai Emas biar matching sama Logo GA */
+    border-radius: 10px;
+    transition: all 0.3s ease;
+  }
+
+  .nav-links {
+    display: none !important; /* Sembunyi dulu */
+    flex-direction: column !important;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: #4a0e0e !important;
+    padding: 20px 0 !important;
+    gap: 0 !important;
+    margin: 0 !important;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  #menu-toggle:checked ~ .nav-links {
+    display: flex !important; /* Muncul saat diklik */
+  }
+
+  #menu-toggle:checked ~ .hamburger span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  #menu-toggle:checked ~ .hamburger span:nth-child(2) {
+    opacity: 0;
+  }
+  #menu-toggle:checked ~ .hamburger span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+  .nav-links li {
+    width: 100%;
+    margin: 0 !important;
+  }
+
+  .nav-links li a {
+    color: #fffaf5 !important;
+    font-size: 13px !important;
+    padding: 15px !important;
+    display: block !important;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
   .banner-content h1 {
     font-size: 2.2rem;
   }
   .product-header-banner {
-    height: 250px;
+    height: 200px;
+    margin-top: 70px;
+    padding: 40px 20px;
   }
 
   .section-title h2 {
-    font-size: 1.5rem;
-    line-height: 1.3;
+    font-size: 1.3rem;
+    letter-spacing: 0.5px;
   }
   .section-title {
     margin: 40px 20px;
   }
 
   .section-title p {
-    font-size: 1rem;
-    line-height: 1.5;
+    font-size: 0.85rem;
+    line-height: 1.4;
   }
 
   .product-container {
@@ -371,5 +533,70 @@
     height: auto;
     display: block;
     width: 100%;
+  }
+
+  .banner-img img {
+    width: 100% !important;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px;
+  }
+
+  .banner-content h1 {
+    font-size: 1.8rem !important;
+  }
+
+  .banner-content p {
+    font-size: 0.95rem !important;
+    padding: 0 10px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-container h3::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .social-links a:hover {
+    padding-left: 0;
+  }
+
+  .audris-card h3,
+  .toefl-mini h3 {
+    font-size: 1.1rem !important; /* Nama Paket (Starter/Standard) */
+  }
+
+  .price-red {
+    font-size: 1.3rem !important; /* Harga jadi lebih proporsional */
+  }
+
+  .audris-card p,
+  .toefl-mini .desc {
+    font-size: 0.8rem !important; /* Deskripsi fitur di dalam kartu */
+    line-height: 1.5;
+  }
+
+  /* 4. Footer (Biar Gak Makan Tempat) */
+  .footer-logo {
+    font-size: 1.4rem !important;
+  }
+
+  .footer-container h3 {
+    font-size: 1rem !important;
+    margin-bottom: 15px;
+  }
+
+  .footer-container p,
+  .social-links a {
+    font-size: 0.85rem !important;
+  }
+
+  .footer-bottom p {
+    font-size: 0.7rem !important;
   }
 }
