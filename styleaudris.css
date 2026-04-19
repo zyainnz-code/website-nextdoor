@@ -1,0 +1,602 @@
+/* --- CSS KHUSUS PRODUK AUDRIS --- */
+.product-header-banner {
+  background-image:
+    linear-gradient(rgba(128, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    url("image/happyasian.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f5f5f5;
+  padding: 100px 20px;
+  padding-bottom: 50px;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 0 !important;
+}
+
+.banner-content h1 {
+  font-size: 3.5rem; /* Ukuran tulisan diperbesar biar fokus */
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+  text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.underline {
+  height: 5px;
+  width: 80px;
+  background-color: #ffd700; /* Warna Emas */
+  margin: 0 auto 20px auto;
+  border-radius: 10px;
+}
+
+.banner-content p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  max-width: 600px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+.countdown {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ffcc00;
+  margin-top: 10px;
+}
+
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto 80px auto;
+  padding: 0 20px;
+}
+
+.audris-card {
+  background: white;
+  border-radius: 25px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px 20px;
+  text-align: center;
+  position: relative;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between;
+  min-height: 450px;
+  height: 100% !important;
+  transition: 0.3s;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+}
+
+.audris-card:hover {
+  transform: translateY(-10px);
+  border-color: #800000;
+  box-shadow: 0 20px 40px rgba(128, 0, 0, 0.2);
+}
+
+.audris-card h3 {
+  color: #800000;
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.rating {
+  color: #ffd700; /* Emas untuk Bintang */
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.price-red {
+  color: #333;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.duration-tag {
+  display: inline-block;
+  background: #fdf2f2;
+  color: #800000;
+  padding: 5px 15px;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.audris-card p {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.btn-submit {
+  background-color: #800000;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.audris-card .btn-submit {
+  margin-top: auto !important;
+  background-color: #800000;
+  color: white;
+  width: 100%;
+}
+.btn-submit:hover {
+  background-color: #ffd700;
+  color: #800000;
+  transform: scale(1.02);
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Layout TOEFL & PTE Area */
+.toeflarea,
+.pte-area {
+  display: flex;
+  align-items: center;
+  max-width: 1300px;
+  margin: 0 auto 100px auto;
+  gap: 30px;
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+
+.banner-img {
+  flex: 1;
+  min-width: 300px;
+  position: relative;
+  overflow: hidden;
+  mask-image: linear-gradient(to bottom, black 65%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 65%, transparent 100%);
+  box-shadow: none;
+}
+
+.banner-img img {
+  width: 100%;
+  border-radius: 25px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+}
+
+.promo-badge {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: #ffd700;
+  color: #800000;
+  padding: 8px 15px;
+  border-radius: 50px;
+  font-weight: 800;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+.toefl-products {
+  flex: 2.5;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.toefl-mini {
+  padding: 30px 20px !important;
+  min-height: 400px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.toefl-mini h3 {
+  font-size: 1.2rem !important;
+}
+
+.toefl-mini .price-red {
+  font-size: 1.5rem !important;
+  color: #333 !important;
+  font-weight: 900;
+}
+
+.toefl-mini .desc {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.section-title {
+  background-color: #800000;
+  color: white;
+  width: 100vw !important;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-top: 0 !important;
+  margin-left: -50vw !important;
+  margin-right: -50vw !important;
+  text-align: center;
+  padding: 20px 25px;
+  box-sizing: border-box;
+  display: block;
+  border: none;
+  border-top: 0;
+}
+
+.section-title h2 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+.section-title p {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  text-align: center !important;
+  max-width: 800px;
+}
+
+/* footer */
+.main-footer {
+  background-color: #4a0e0e;
+  color: #ffffff;
+  padding: 60px 5% 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-about,
+.footer-contact,
+.footer-social {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-logo {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.footer-logo span {
+  color: #ffd700; /* Emas */
+}
+
+.footer-container h3 {
+  color: #ffd700; /* Emas untuk judul kolom */
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+/* Garis bawah emas tipis di judul */
+.footer-container h3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 2px;
+  background-color: #ffd700;
+}
+
+.footer-container p {
+  font-size: 0.9rem;
+  line-height: 1.8;
+  color: #e0e0e0;
+  margin-bottom: 15px;
+}
+
+/* Styling Link Sosial Media */
+.social-links a {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  margin-bottom: 12px;
+  transition: 0.3s;
+  font-size: 0.95rem;
+}
+
+.social-links a:hover {
+  color: #ffd700;
+  padding-left: 8px; /* Efek geser dikit pas di-hover */
+}
+
+/* Bottom Bar */
+.footer-bottom {
+  text-align: center;
+  margin-top: 50px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-bottom p {
+  font-size: 0.8rem;
+  color: #bbb;
+}
+
+.footer-bottom span {
+  color: #ff4d4d; /* Warna hati merah */
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    background-color: #4a0e0e !important; /* Marun gelap sesuai kodemu */
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 10px !important;
+    height: 70px !important;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10001;
+  }
+
+  #menu-toggle {
+    display: none !important;
+  }
+
+  .hamburger {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 18px;
+    cursor: pointer;
+    z-index: 10002;
+  }
+
+  .hamburger span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #ffd700 !important; /* Pakai Emas biar matching sama Logo GA */
+    border-radius: 10px;
+    transition: all 0.3s ease;
+  }
+
+  .nav-links {
+    display: none !important; /* Sembunyi dulu */
+    flex-direction: column !important;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: #4a0e0e !important;
+    padding: 20px 0 !important;
+    gap: 0 !important;
+    margin: 0 !important;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  #menu-toggle:checked ~ .nav-links {
+    display: flex !important; /* Muncul saat diklik */
+  }
+
+  #menu-toggle:checked ~ .hamburger span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  #menu-toggle:checked ~ .hamburger span:nth-child(2) {
+    opacity: 0;
+  }
+  #menu-toggle:checked ~ .hamburger span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+  .nav-links li {
+    width: 100%;
+    margin: 0 !important;
+  }
+
+  .nav-links li a {
+    color: #fffaf5 !important;
+    font-size: 13px !important;
+    padding: 15px !important;
+    display: block !important;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  .banner-content h1 {
+    font-size: 2.2rem;
+  }
+  .product-header-banner {
+    height: 200px;
+    margin-top: 70px;
+    padding: 40px 20px;
+  }
+
+  .section-title h2 {
+    font-size: 1.3rem;
+    letter-spacing: 0.5px;
+  }
+  .section-title {
+    margin: 40px 20px;
+  }
+
+  .section-title p {
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+
+  .product-container {
+    gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 15px;
+    margin-bottom: 50px;
+  }
+
+  .audris-card {
+    padding: 25px 15px;
+    min-height: auto;
+    border-radius: 15px;
+  }
+
+  .audris-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+  }
+
+  .rating {
+    font-size: 0.7rem;
+    margin-bottom: 10px;
+  }
+
+  .price-red {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+  }
+
+  .duration-tag {
+    font-size: 0.7rem;
+    padding: 3px 10px;
+    margin-bottom: 15px;
+  }
+
+  .audris-card p {
+    font-size: 0.8rem; /* Deskripsi lebih kecil */
+    margin-bottom: 20px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* batas 3 baris */
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .btn-submit {
+    padding: 10px;
+    font-size: 0.8rem;
+    border-radius: 8px;
+  }
+
+  .toefl-products {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .banner-img img,
+  .product-header-banner img {
+    width: 100% !important;
+    max-height: 100px !important;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  .banner-img {
+    height: auto;
+    display: block;
+    width: 100%;
+  }
+
+  .banner-img img {
+    width: 100% !important;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px;
+  }
+
+  .banner-content h1 {
+    font-size: 1.8rem !important;
+  }
+
+  .banner-content p {
+    font-size: 0.95rem !important;
+    padding: 0 10px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-container h3::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .social-links a:hover {
+    padding-left: 0;
+  }
+
+  .audris-card h3,
+  .toefl-mini h3 {
+    font-size: 1.1rem !important; /* Nama Paket (Starter/Standard) */
+  }
+
+  .price-red {
+    font-size: 1.3rem !important; /* Harga jadi lebih proporsional */
+  }
+
+  .audris-card p,
+  .toefl-mini .desc {
+    font-size: 0.8rem !important; /* Deskripsi fitur di dalam kartu */
+    line-height: 1.5;
+  }
+
+  /* 4. Footer (Biar Gak Makan Tempat) */
+  .footer-logo {
+    font-size: 1.4rem !important;
+  }
+
+  .footer-container h3 {
+    font-size: 1rem !important;
+    margin-bottom: 15px;
+  }
+
+  .footer-container p,
+  .social-links a {
+    font-size: 0.85rem !important;
+  }
+
+  .footer-bottom p {
+    font-size: 0.7rem !important;
+  }
+}
