@@ -64,7 +64,7 @@ html {
 .countdown-timers {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; /* centered like nav content */
   gap: 5px;
 }
 
@@ -151,13 +151,6 @@ html {
   .countdown-cta {
     width: 100%;
     text-align: center;
-  }
-  .countdown-right {
-    width: 100%;
-    justify-content: space-between;
-  }
-  .countdown-loc {
-    text-align: left;
   }
 }
 
@@ -1075,14 +1068,14 @@ nav ul li a {
 }
 
 .reviews .section-title {
-  color: white;
+  color: #ffd700;
   font-size: 1.8rem;
   font-weight: 800;
   margin-bottom: 6px; /* was 50px — that caused the gap */
 }
 
 .reviews-sub {
-  color: rgba(255, 255, 255, 0.5);
+  color: #ffd700;
   font-size: 0.9rem;
   margin-top: 0;
   margin-bottom: 16px; /* reduce from 40px */
@@ -1513,10 +1506,11 @@ nav ul li a {
   opacity: 1;
 }
 
-/* app section */
+/* app section*/
 .app-section {
-  padding: 50px 5% 50px 5%; /* shorter top and bottom */
+  padding: 60px 5%;
   background-color: #fdf9f3;
+  overflow: hidden;
 }
 
 .app-title {
@@ -1524,28 +1518,30 @@ nav ul li a {
   color: #800000;
   font-size: 1.8rem;
   font-weight: 800;
-  margin-bottom: 20px; /* reduce space below title */
-  letter-spacing: 2px;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
 }
 
 .app-container {
   display: flex;
-  align-items: center;
+  align-items: center; /* vertically centers both sides */
   justify-content: space-between;
-  gap: 20px; /* less space between text and mockup */
+  gap: 40px;
   max-width: 1200px;
   margin: 0 auto;
+  min-height: unset; /* remove fixed height — this was the culprit */
 }
 
 .app-left {
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  justify-content: center;
+  gap: 28px;
 }
 
 .app-headline {
-  font-size: 2.8rem; /* bigger text */
+  font-size: 2.4rem;
   font-weight: 800;
   color: #800000;
   line-height: 1.25;
@@ -1560,10 +1556,11 @@ nav ul li a {
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .app-store-btn {
-  height: 64px; /* bigger buttons */
+  height: 70px;
   width: auto;
   display: block;
   border-radius: 10px;
@@ -1575,33 +1572,35 @@ nav ul li a {
 }
 
 .app-right {
-  flex: 0 0 auto; /* don't stretch */
+  flex: 1;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  margin-right: -5%; /* push all the way to the right edge */
+  justify-content: flex-end; /* push to right */
+  padding-right: 0;
 }
 
 .app-mockup {
-  width: auto;
-  max-width: 500px; /* bigger mockup */
+  width: 100%;
+  max-width: 420px; /* controlled size so it doesn't overflow */
   height: auto;
+  object-fit: contain;
   display: block;
-  filter: drop-shadow(0 24px 48px rgba(0,0,0,0.15));
+  filter: drop-shadow(0 20px 40px rgba(0,0,0,0.12));
 }
 
 @media screen and (max-width: 768px) {
   .app-container {
     flex-direction: column;
-    text-align: center;
   }
   .app-buttons {
     justify-content: center;
   }
   .app-right {
     width: 100%;
+    justify-content: center;
   }
   .app-headline {
     font-size: 1.6rem;
+    text-align: center;
   }
 }
