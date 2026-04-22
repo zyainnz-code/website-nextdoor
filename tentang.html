@@ -4,18 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tentang Kami</title>
-    <link rel="stylesheet" href="stylehelen.css"/>
+    <link rel="stylesheet" href="stylehelen.css" />
   </head>
   <body>
     <!-- NAVBAR -->
     <nav class="navbar">
       <div class="logo">
+        <!-- Jika ada logo gunakan: <img src="image/logo-cream.PNG" alt="Logo TOGA" /> -->
         <img src="image/logo-cream.PNG" alt="Logo TOGA" />
       </div>
       <ul class="nav-links">
-        <li><a href="homenat.html">Home</a></li>
+        <li><a href="home.html">Home</a></li>
         <li><a href="produk.html">Produk</a></li>
-        <li><a href="tentang.html">Tentang Kami</a></li>
+        <li><a href="tentang.html" class="active">Tentang Kami</a></li>
         <li><a href="kontak.html">Kontak</a></li>
       </ul>
     </nav>
@@ -34,12 +35,11 @@
     <!-- INFO CARDS: Greetings, Vision, Mission -->
     <section class="info-section">
       <div class="info-container">
+        <!-- GREETINGS -->
         <div class="info-card">
           <div class="icon">
             <svg
               viewBox="0 0 24 24"
-              width="60"
-              height="60"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -74,12 +74,11 @@
           </p>
         </div>
 
+        <!-- VISION -->
         <div class="info-card">
           <div class="icon">
             <svg
               viewBox="0 0 24 24"
-              width="60"
-              height="60"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -121,17 +120,16 @@
           <h2><span>VIS</span>ION</h2>
           <p>
             Menjadi perusahaan pelatihan hybrid (daring dan luring) terdepan di
-            Indonesia yang membentuk individu budaya saing global dengan
+            Indonesia yang membentuk individu berdaya saing global dengan
             keahlian bahasa dan keterampilan profesional esensial.
           </p>
         </div>
 
+        <!-- MISSION -->
         <div class="info-card">
           <div class="icon">
             <svg
               viewBox="0 0 24 24"
-              width="60"
-              height="60"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -180,8 +178,8 @@
           <p>
             Berfokus pada pengembangan keterampilan interpersonal, harga
             terjangkau, dan layanan pelanggan yang unggul untuk memastikan
-            kesuksesan belajar setiap individu melalui model pembelajaran hybrid
-            dengan mengutamakan kualitas pengajar.
+            kesuksesan belajar setiap individu melalui model pembelajaran
+            hybrid.
           </p>
         </div>
       </div>
@@ -191,53 +189,42 @@
     <section class="stats-section">
       <div class="stats-container">
         <div class="stat-card">
-          <div class="stat-icon">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path d="M22 9L12 5L2 9l10 4 10-4z" />
-              <path d="M6 11v5c0 2.21 2.686 4 6 4s6-1.79 6-4v-5" />
-              <line x1="22" y1="9" x2="22" y2="15" />
-            </svg>
-          </div>
+          <svg viewBox="0 0 24 24">
+            <path d="M22 9L12 5L2 9l10 4 10-4z" />
+            <path d="M6 11v5c0 2.21 2.686 4 6 4s6-1.79 6-4v-5" />
+            <line x1="22" y1="9" x2="22" y2="15" />
+          </svg>
           <span class="stat-label">4000+ Graduates</span>
         </div>
-
         <div class="stat-card">
-          <div class="stat-icon">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <rect x="5" y="2" width="14" height="20" rx="2" />
-              <line x1="9" y1="7" x2="15" y2="7" />
-              <line x1="9" y1="11" x2="15" y2="11" />
-              <line x1="9" y1="15" x2="13" y2="15" />
-              <circle cx="17" cy="17" r="4" stroke-width="1.8" />
-              <path d="M16 17l.5.5L18.5 15.5" />
-            </svg>
-          </div>
+          <svg viewBox="0 0 24 24">
+            <rect x="5" y="2" width="14" height="20" rx="2" />
+            <line x1="9" y1="7" x2="15" y2="7" />
+            <line x1="9" y1="11" x2="15" y2="11" />
+            <line x1="9" y1="15" x2="13" y2="15" />
+            <circle cx="17" cy="17" r="4" stroke-width="1.8" />
+            <path d="M16 17l.5.5L18.5 15.5" />
+          </svg>
           <span class="stat-label">495 Current Students</span>
         </div>
-
         <div class="stat-card">
-          <div class="stat-icon">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="9" cy="7" r="3" />
-              <circle cx="15" cy="7" r="3" />
-              <path d="M3 21v-2a6 6 0 0 1 6-6" />
-              <path d="M21 21v-2a6 6 0 0 0-6-6h-1" />
-            </svg>
-          </div>
+          <svg viewBox="0 0 24 24">
+            <circle cx="9" cy="7" r="3" />
+            <circle cx="15" cy="7" r="3" />
+            <path d="M3 21v-2a6 6 0 0 1 6-6" />
+            <path d="M21 21v-2a6 6 0 0 0-6-6h-1" />
+          </svg>
           <span class="stat-label">29 Professional Tutors</span>
         </div>
-
         <div class="stat-card">
-          <div class="stat-icon">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
-              <path
-                d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"
-              />
-              <line x1="9" y1="7" x2="15" y2="7" />
-              <line x1="9" y1="11" x2="13" y2="11" />
-            </svg>
-          </div>
+          <svg viewBox="0 0 24 24">
+            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+            <path
+              d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"
+            />
+            <line x1="9" y1="7" x2="15" y2="7" />
+            <line x1="9" y1="11" x2="13" y2="11" />
+          </svg>
           <span class="stat-label">2 Course Programs</span>
         </div>
       </div>
@@ -245,67 +232,61 @@
 
     <!-- FEATURES SECTION -->
     <section class="features-section">
-      <div style="max-width: 1100px; margin: 0 auto">
-        <div class="features-header">
-          <h2>FEATURES</h2>
+      <div class="features-header">
+        <h2>FEATURES</h2>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <svg viewBox="0 0 24 24">
+            <rect x="3" y="3" width="18" height="14" rx="2" />
+            <circle cx="8" cy="10" r="2.5" />
+            <line x1="13" y1="8" x2="18" y2="8" />
+            <line x1="13" y1="12" x2="16" y2="12" />
+            <path d="M7 21l2-4h6l2 4" />
+          </svg>
+          <span>Consultation</span>
         </div>
-        <div class="features-wrapper">
-          <div class="features-grid">
-            <div class="feature-card">
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <rect x="3" y="3" width="18" height="14" rx="2" />
-                <circle cx="8" cy="10" r="2.5" />
-                <line x1="13" y1="8" x2="18" y2="8" />
-                <line x1="13" y1="12" x2="16" y2="12" />
-                <path d="M7 21l2-4h6l2 4" />
-              </svg>
-              <span>Consultation</span>
-            </div>
-
-            <div class="feature-card">
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <rect x="2" y="3" width="20" height="14" rx="2" />
-                <circle cx="8" cy="10" r="1.5" />
-                <circle cx="12" cy="10" r="1.5" />
-                <circle cx="16" cy="10" r="1.5" />
-                <path d="M5 17v4" />
-                <path d="M12 17v4" />
-                <path d="M19 17v4" />
-                <line x1="3" y1="21" x2="21" y2="21" />
-              </svg>
-              <span>Class Program</span>
-            </div>
-
-            <div class="feature-card premium">
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="12" cy="12" r="9" />
-                <path d="M9 12l2 2 4-4" />
-              </svg>
-              <span>Premium</span>
-            </div>
-
-            <div class="feature-card">
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9" />
-                <path d="M13.73 21a2 2 0 0 1-3.46 0" />
-              </svg>
-              <span>Announcement</span>
-            </div>
-
-            <div class="feature-card">
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <rect x="3" y="4" width="18" height="18" rx="2" />
-                <line x1="16" y1="2" x2="16" y2="6" />
-                <line x1="8" y1="2" x2="8" y2="6" />
-                <line x1="3" y1="10" x2="21" y2="10" />
-                <line x1="8" y1="14" x2="8" y2="14" stroke-width="2.5" />
-                <line x1="12" y1="14" x2="12" y2="14" stroke-width="2.5" />
-                <line x1="16" y1="14" x2="16" y2="14" stroke-width="2.5" />
-                <line x1="8" y1="18" x2="8" y2="18" stroke-width="2.5" />
-                <line x1="12" y1="18" x2="12" y2="18" stroke-width="2.5" />
-              </svg>
-              <span>Schedule</span>
-            </div>
+        <div class="feature-card">
+          <svg viewBox="0 0 24 24">
+            <rect x="2" y="3" width="20" height="14" rx="2" />
+            <circle cx="8" cy="10" r="1.5" />
+            <circle cx="12" cy="10" r="1.5" />
+            <circle cx="16" cy="10" r="1.5" />
+            <path d="M5 17v4" />
+            <path d="M12 17v4" />
+            <path d="M19 17v4" />
+            <line x1="3" y1="21" x2="21" y2="21" />
+          </svg>
+          <span>Class Program</span>
+        </div>
+        <div class="feature-card">
+          <svg viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="9" />
+            <path d="M9 12l2 2 4-4" />
+          </svg>
+          <span>Premium</span>
+        </div>
+        <div class="feature-card">
+          <svg viewBox="0 0 24 24">
+            <path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9" />
+            <path d="M13.73 21a2 2 0 0 1-3.46 0" />
+          </svg>
+          <span>Announcement</span>
+        </div>
+        <div class="feature-card">
+          <svg viewBox="0 0 24 24">
+            <rect x="3" y="4" width="18" height="18" rx="2" />
+            <line x1="16" y1="2" x2="16" y2="6" />
+            <line x1="8" y1="2" x2="8" y2="6" />
+            <line x1="3" y1="10" x2="21" y2="10" />
+            <line x1="8" y1="14" x2="8" y2="14" stroke-width="2.5" />
+            <line x1="12" y1="14" x2="12" y2="14" stroke-width="2.5" />
+            <line x1="16" y1="14" x2="16" y2="14" stroke-width="2.5" />
+            <line x1="8" y1="18" x2="8" y2="18" stroke-width="2.5" />
+            <line x1="12" y1="18" x2="12" y2="18" stroke-width="2.5" />
+          </svg>
+          <span>Schedule</span>
+        </div>
       </div>
     </section>
 
@@ -314,7 +295,7 @@
       <h2 class="section-title">ENSURING <span>YOUR SUCCESS</span> WITH</h2>
       <div class="ensuring-container">
         <div class="ensuring-card">
-          <div class="ensuring-card-img-placeholder">📘</div>
+          <div class="card-icon">📘</div>
           <div class="ensuring-card-body">
             <h3>English Next Door</h3>
             <p>
@@ -326,9 +307,8 @@
             </p>
           </div>
         </div>
-
         <div class="ensuring-card">
-          <div class="ensuring-card-img-placeholder">🚀</div>
+          <div class="card-icon">🚀</div>
           <div class="ensuring-card-body">
             <h3>AdvanceU</h3>
             <p>
@@ -341,42 +321,39 @@
           </div>
         </div>
       </div>
+    </section>
 
-      <footer class="main-footer">
+    <!-- FOOTER -->
+    <footer class="main-footer">
       <div class="footer-container">
         <div class="footer-about">
-          <h2 class="footer-logo">
-            <span class="text-white">TO</span
-            ><span class="text-yellow">GA</span> Program
-          </h2>
+          <div class="footer-logo-text">
+            <span style="color: #fff">TO</span
+            ><span style="color: #ffd700">GA</span> Program
+          </div>
           <p>
             Solusi belajar bahasa Inggris dan pengembangan diri terbaik di
             Pontianak. Berkualitas, terjangkau, dan terpercaya.
           </p>
         </div>
-
         <div class="footer-contact">
           <h3>Hubungi Kami</h3>
           <p>Alamat: Jl. Ayani, Komplek Ayani Megamall No. 123, Pontianak</p>
           <p>Telepon: (0561) 123456</p>
           <p>Email: info@englishtoga.com</p>
         </div>
-
         <div class="footer-social">
           <h3>Ikuti Kami</h3>
           <div class="social-icons">
-            <a href="#">Instagram</a>
-            <a href="#">WhatsApp</a>
-            <a href="#">LinkedIn</a>
+            <a href="#">📷 Instagram</a>
+            <a href="#">💬 WhatsApp</a>
+            <a href="#">💼 LinkedIn</a>
           </div>
         </div>
       </div>
-
       <div class="footer-bottom">
         <p>&copy; 2026 TOGA Program. All rights reserved.</p>
       </div>
     </footer>
-
-    </section>
   </body>
 </html>
