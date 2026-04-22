@@ -3,75 +3,292 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Produk Kami - TOGA Program</title>
-    <link rel="stylesheet" href="stylenat.css" />
+    <title>Program Kami - TOGA Program</title>
+    <!-- <link rel="stylesheet" href="stylege.css" /> -->
+    <link rel="stylesheet" href="styleaudris.css" />
   </head>
   <body class="bg-cream">
-    <nav class="navbar">
+    <header class="navbar">
       <div class="logo">
-        <a href="homenat.html" style="text-decoration: none; color: white">
-          <strong>TO<span style="color: #ffd700">GA</span></strong> Program
-        </a>
+        <img src="image/logo-cream.PNG" alt="English Next Door Logo" />
       </div>
       <ul class="nav-links">
-        <li><a href="homenat.html">Home</a></li>
-        <li><a href="produk.html" class="active">Produk</a></li>
-        <li><a href="about.html">Tentang Kami</a></li>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="produk.html">Produk</a></li>
+        <li><a href="tentang.html">Tentang Kami</a></li>
         <li><a href="kontak.html">Kontak</a></li>
       </ul>
-    </nav>
+    </header>
 
-    <section class="products-page">
-      <div class="product-header">
-        <h2>Pilihan Program Unggulan</h2>
-        <p>Investasi terbaik untuk masa depanmu dimulai dari sini.</p>
-      </div>
-
-      <div class="product-grid">
-        <div class="product-card">
-          <div class="badge">Terpopuler</div>
-          <h3>English Intensive</h3>
-          <div class="price">IDR 500k<span>/bulan</span></div>
-          <ul>
-            <li>✅ 8x Pertemuan Sebulan</li>
-            <li>✅ Speaking & Grammar</li>
-            <li>✅ E-Certificate</li>
-            <li>✅ Modul Belajar Digital</li>
-          </ul>
-          <a href="homenat.html#daftar" class="btn-product">Pilih Paket</a>
+    <div class="countdown-bar">
+      <div class="countdown-bar-inner">
+        <div class="countdown-left">
+          <div class="countdown-badge">🔥 UPCOMING</div>
+          <div class="countdown-title">Sharing Career 2026</div>
+          <div class="countdown-loc">
+            29 April · Function Hall · Universitas Widya Dharma
+          </div>
         </div>
 
-        <div class="product-card special">
-          <div class="badge">Best Value</div>
-          <h3>Bundle Program</h3>
-          <div class="price">IDR 900k<span>/paket</span></div>
-          <ul>
-            <li>✅ English + Skill Development</li>
-            <li>✅ Konsultasi Karir</li>
-            <li>✅ Sertifikat Fisik</li>
-            <li>✅ Grup Eksklusif WhatsApp</li>
-          </ul>
-          <a href="homenat.html#daftar" class="btn-product">Pilih Paket</a>
+        <div class="countdown-timers">
+          <div class="countdown-box">
+            <span id="cd-days">00</span><span class="cd-unit">HARI</span>
+          </div>
+          <div class="cd-sep">:</div>
+          <div class="countdown-box">
+            <span id="cd-hours">00</span><span class="cd-unit">JAM</span>
+          </div>
+          <div class="cd-sep">:</div>
+          <div class="countdown-box">
+            <span id="cd-minutes">00</span><span class="cd-unit">MENIT</span>
+          </div>
+          <div class="cd-sep">:</div>
+          <div class="countdown-box">
+            <span id="cd-seconds">00</span><span class="cd-unit">DETIK</span>
+          </div>
         </div>
 
-        <div class="product-card">
-          <h3>Skill Development</h3>
-          <div class="price">IDR 500k<span>/kursus</span></div>
-          <ul>
-            <li>✅ Fokus ke Hard Skill</li>
-            <li>✅ 4x Sesi Workshop</li>
-            <li>✅ Portofolio Project</li>
-            <li>✅ Akses Rekaman Kelas</li>
-          </ul>
-          <a href="homenat.html#daftar" class="btn-product">Pilih Paket</a>
+        <div style="display: flex; justify-content: flex-end">
+          <a href="#daftar" style="text-decoration: none">
+            <button class="countdown-cta">Daftar Sekarang →</button>
+          </a>
         </div>
       </div>
-    </section>
+    </div>
+
+    <div class="hero-topbar">
+      <div class="hero-topbar-text">
+        <span class="topbar-to">TO</span><span class="topbar-ga">GA</span
+        ><span class="topbar-program"> Program</span>
+      </div>
+    </div>
+
+    <header class="product-header-banner">
+      <div class="banner-content">
+        <h1>English Intensive</h1>
+        <div class="underline"></div>
+        <p>
+          Tingkatkan kemampuan bahasa Inggrismu dengan program paling
+          komprehensif.
+        </p>
+      </div>
+    </header>
+
+    <div class="section-title">
+      <h2>IELTS Preparation Packages</h2>
+      <p>
+        Program kurikulum internasional untuk membantu kamu mencapai target skor
+        impian.
+      </p>
+    </div>
+
+    <div class="product-container">
+      <div class="audris-card">
+        <div>
+          <h3>IELTS Starter</h3>
+          <div class="rating">⭐⭐⭐⭐⭐ (124 review)</div>
+          <div class="price-red">Rp1.800.000</div>
+          <div class="duration-tag">Durasi: 4 Minggu</div>
+          <p>
+            Program dasar untuk memahami format ujian dan mengasah empat skill
+            utama bagi pemula.
+          </p>
+        </div>
+        <button class="btn-submit" onclick="location.href = 'home.html#daftar'">
+          Ambil Sekarang
+        </button>
+      </div>
+
+      <div class="audris-card">
+        <h3>IELTS Standard</h3>
+        <div class="rating">⭐⭐⭐⭐⭐ (164 review)</div>
+        <div class="price-red">Rp4.500.000</div>
+        <div class="duration-tag">Durasi: 7 Minggu</div>
+        <p>
+          Latihan soal intensif, akses bank soal premium, dan simulasi mock test
+          resmi.
+        </p>
+        <button class="btn-submit" onclick="location.href = 'home.html#daftar'">
+          Ambil Sekarang
+        </button>
+      </div>
+
+      <div class="audris-card">
+        <h3>IELTS Pro</h3>
+        <div class="rating">⭐⭐⭐⭐⭐ (201 review)</div>
+        <div class="price-red">Rp5.500.000</div>
+        <div class="duration-tag">Durasi: 8 Minggu</div>
+        <p>
+          Masterclass khusus target skor tinggi dengan simulasi tes lebih
+          banyak. Fokus pada pelatihan intensif serta feedback personal mendalam
+          dari tutor ahli.
+        </p>
+        <button class="btn-submit" onclick="location.href = 'home.html#daftar'">
+          Ambil Sekarang
+        </button>
+      </div>
+
+      <div class="audris-card">
+        <h3>IELTS Private</h3>
+        <div class="rating">⭐⭐⭐⭐⭐ (90 review)</div>
+        <div class="price-red">Rp10.500.000</div>
+        <div class="duration-tag">Durasi: 8 Minggu</div>
+        <p>
+          Program bimbingan privat eksklusif bersama high-score tutor untuk
+          hasil maksimal. Fokus pada strategi personal dan dukungan feedback
+          tanpa batas setiap sesi.
+        </p>
+        <button class="btn-submit" onclick="location.href = 'home.html#daftar'">
+          Ambil Sekarang
+        </button>
+      </div>
+    </div>
+
+    <div class="section-title">
+      <h2>TOEFL ITP Preparation Packages</h2>
+      <p>Pilih program terbaik untuk meningkatkan skor TOEFL ITP Anda</p>
+    </div>
+
+    <div class="toeflarea">
+      <div class="banner-img">
+        <img src="image/toefl.png" alt="TOEFL Banner" />
+      </div>
+
+      <div class="toefl-products">
+        <div class="audris-card toefl-mini">
+          <h3>TOEFL Starter</h3>
+          <div class="rating">⭐⭐⭐⭐⭐ (20 review)</div>
+          <p class="price-red">Rp2.500.000</p>
+          <div class="duration-tag">Durasi: 4 Minggu</div>
+          <p class="desc">Dasar-dasar TOEFL & strategi awal.</p>
+          <button
+            class="btn-submit"
+            onclick="location.href = 'home.html#daftar'"
+          >
+            Ambil Sekarang
+          </button>
+        </div>
+
+        <div class="audris-card toefl-mini">
+          <h3>TOEFL Standard</h3>
+          <div class="rating">⭐⭐⭐⭐⭐ (23 review)</div>
+          <p class="price-red">Rp3.500.000</p>
+          <div class="duration-tag">Durasi: 6 Minggu</div>
+          <p class="desc">Latihan soal intensif & 2x Mock Test.</p>
+          <button
+            class="btn-submit"
+            onclick="location.href = 'home.html#daftar'"
+          >
+            Ambil Sekarang
+          </button>
+        </div>
+
+        <div class="audris-card toefl-mini">
+          <h3>TOEFL Private</h3>
+          <div class="rating">⭐⭐⭐⭐⭐ (30 review)</div>
+          <p class="price-red">Rp7.500.000</p>
+          <div class="duration-tag">Durasi: 6 Minggu</div>
+          <p class="desc">1-on-1 bersama tutor & jam fleksibel.</p>
+          <button
+            class="btn-submit"
+            onclick="location.href = 'home.html#daftar'"
+          >
+            Ambil Sekarang
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-title">
+      <h2>PTE Academic Preparation Packages</h2>
+      <p>Pilih program terbaik untuk meningkatkan skor PTE akademik Anda</p>
+    </div>
+    <!-- asumsi saja toefl itu pte, saya mager buat css baru -->
+    <div class="toeflarea">
+      <div class="toefl-products">
+        <div class="audris-card toefl-mini">
+          <h3>PTE Starter</h3>
+          <div class="rating">⭐⭐⭐⭐⭐ (98 review)</div>
+          <p class="price-red">Rp2.800.000</p>
+          <div class="duration-tag">Durasi: 4 Minggu</div>
+          <p class="desc">
+            Bimbingan intensif pengenalan format PTE Academic berbasis AI
+          </p>
+          <button
+            class="btn-submit"
+            onclick="location.href = 'home.html#daftar'"
+          >
+            Ambil Sekarang
+          </button>
+        </div>
+
+        <div class="audris-card toefl-mini">
+          <h3>PTE Standard</h3>
+          <div class="rating">⭐⭐⭐⭐⭐ (142 review)</div>
+          <p class="price-red">Rp4.200.000</p>
+          <div class="duration-tag">Durasi: 6 Minggu</div>
+          <p class="desc">latihan soal real-exam dengan feedback skor instan</p>
+          <button
+            class="btn-submit"
+            onclick="location.href = 'home.html#daftar'"
+          >
+            Ambil Sekarang
+          </button>
+        </div>
+
+        <div class="audris-card toefl-mini">
+          <h3>PTE Private</h3>
+          <div class="rating">⭐⭐⭐⭐⭐ (89 review)</div>
+          <p class="price-red">Rp8.500.000</p>
+          <div class="duration-tag">Durasi: 6 Minggu</div>
+          <p class="desc">
+            Bimbingan 1-on-1 fokus pada kelemahan speaking & writing
+          </p>
+          <button
+            class="btn-submit"
+            onclick="location.href = 'home.html#daftar'"
+          >
+            Ambil Sekarang
+          </button>
+        </div>
+      </div>
+    </div>
 
     <footer class="main-footer">
+      <div class="footer-container">
+        <div class="footer-about">
+          <h2 class="footer-logo">
+            <span class="text-white">TO</span
+            ><span class="text-yellow">GA</span> Program
+          </h2>
+          <p>
+            Solusi belajar bahasa Inggris terbaik di Pontianak. Berkualitas,
+            terjangkau, dan terpercaya.
+          </p>
+        </div>
+
+        <div class="footer-contact">
+          <h3>Hubungi Kami</h3>
+          <p>Alamat: Jl. Ayani, Komplek Ayani Megamall No. 123, Pontianak</p>
+          <p>Telepon: (0561) 123456</p>
+          <p>Email: info@englishtoga.com</p>
+        </div>
+
+        <div class="footer-social">
+          <h3>Ikuti Kami</h3>
+          <div class="social-icons">
+            <a href="#">Instagram</a>
+            <a href="#">WhatsApp</a>
+            <a href="#">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+
       <div class="footer-bottom">
-        <p>&copy; 2026 TOGA Program. Built with ❤️ by Natally.</p>
+        <p>&copy; 2026 TOGA Program. All rights reserved.</p>
       </div>
     </footer>
+
+    <script src="scripthome.js"></script>
   </body>
 </html>

@@ -1,533 +1,303 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact Us</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
-  <style>
-    /* ── RESET ── */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: "Poppins", sans-serif;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styleservia.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <header class="navbar">
+      <div class="logo">
+        <img src="image/logo-cream.PNG" alt="English Next Door Logo" />
+      </div>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="produk.html">Produk</a></li>
+        <li><a href="tentang.html">Tentang Kami</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+    </header>
 
-    html { scroll-behavior: smooth; }
+    <div class="countdown-bar">
+      <div class="countdown-bar-inner">
+        <div class="countdown-left">
+          <div class="countdown-badge">🔥 UPCOMING</div>
+          <div class="countdown-title">Sharing Career 2026</div>
+          <div class="countdown-loc">
+            29 April · Function Hall · Universitas Widya Dharma
+          </div>
+        </div>
 
-    body {
-      background-color: #fdf9f3;
-      color: #333;
-    }
+        <div class="countdown-timers">
+          <div class="countdown-box">
+            <span id="cd-days">00</span><span class="cd-unit">HARI</span>
+          </div>
+          <div class="cd-sep">:</div>
+          <div class="countdown-box">
+            <span id="cd-hours">00</span><span class="cd-unit">JAM</span>
+          </div>
+          <div class="cd-sep">:</div>
+          <div class="countdown-box">
+            <span id="cd-minutes">00</span><span class="cd-unit">MENIT</span>
+          </div>
+          <div class="cd-sep">:</div>
+          <div class="countdown-box">
+            <span id="cd-seconds">00</span><span class="cd-unit">DETIK</span>
+          </div>
+        </div>
 
-    /* ── NAVBAR ── */
-    .navbar {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      padding: 0px 5%;
-      width: 100%;
-      background-color: #4a0e0e;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
+        <div style="display: flex; justify-content: flex-end">
+          <a href="#daftar" style="text-decoration: none">
+            <button class="countdown-cta">Daftar Sekarang →</button>
+          </a>
+        </div>
+      </div>
+    </div>
 
-    .logo {
-      font-size: 1.4rem;
-      font-weight: 800;
-      color: #ffd700;
-      text-decoration: none;
-      padding: 18px 0;
-    }
+    <div class="hero-topbar">
+      <div class="hero-topbar-text">
+        <span class="topbar-to">TO</span><span class="topbar-ga">GA</span
+        ><span class="topbar-program"> Program</span>
+      </div>
+    </div>
 
-    .nav-links {
-      display: flex;
-      list-style: none;
-      margin-left: auto;
-      padding: 0;
-    }
+    <!-- HERO -->
+    <div class="hero">
+      <h1>Contact Us</h1>
+      <p>
+        Let's Improve Your English Together! Masih ragu mau mulai dari mana?
+        Hubungi kami dulu, yuk!
+      </p>
+    </div>
 
-    .nav-links li { margin: 0 15px; }
+    <!-- CONTACT SECTION -->
+    <div class="contact-section">
+      <!-- INFO KONTAK -->
+      <div class="info-container">
+        <h2>Contact Information</h2>
+        <p>Hubungi kami lewat salah satu cara di bawah ini 👇</p>
 
-    .nav-links a {
-      text-decoration: none;
-      color: #ffffff;
-      font-weight: bold;
-      transition: 0.3s;
-    }
+        <div class="info-item">
+          <div class="info-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+              <polyline points="9 22 9 12 15 12 15 22" />
+            </svg>
+          </div>
+          <div class="info-text">
+            <p>alamat:</p>
+            <p>Jl. Ayani, Komplek ayani Megamall no.123, Pontianak</p>
+          </div>
+        </div>
 
-    .nav-links a:hover { color: #ffd700; }
-    .nav-links a.active { color: #ffd700; }
+        <div class="info-item">
+          <div class="info-icon">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M22 16.92v3a2 2 0 01-2.18 2A19.86 19.86 0 013.09 4.18 2 2 0 015.07 2h3a2 2 0 012 1.72c.13.96.36 1.9.71 2.81a2 2 0 01-.45 2.11L9.09 9.91a16 16 0 006.99 6.99l1.27-1.27a2 2 0 012.11-.45c.91.35 1.85.58 2.81.71A2 2 0 0122 16.92z"
+              />
+            </svg>
+          </div>
+          <div class="info-text">
+            <p>Telepon</p>
+            <p>(0561) 123456</p>
+          </div>
+        </div>
 
-    /* ── HERO ── */
-    .hero {
-      background: linear-gradient(rgba(55,5,5,0.85), rgba(0,0,0,0.85));
-      background-color: #800000;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      color: white;
-      padding: 80px 20px 60px;
-      position: relative;
-    }
-    .hero::after {
-      content: '';
-      position: absolute;
-      bottom: 0; left: 0; right: 0;
-      height: 6px;
-      background: #ffd700;
-    }
-    .hero h1 {
-      font-size: clamp(2rem, 5vw, 3.5rem);
-      font-weight: 800;
-      color: #ffd700;
-      margin-bottom: 15px;
-    }
-    .hero p {
-      font-size: 1.1rem;
-      line-height: 1.6;
-      color: #e0e0e0;
-      max-width: 500px;
-    }
+        <div class="info-item">
+          <div class="info-icon">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+              />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+          </div>
+          <div class="info-text">
+            <p>Email</p>
+            <p>info@englishtoga.com</p>
+          </div>
+        </div>
 
-    /* ── CONTACT SECTION ── */
-    .contact-section {
-      padding: 80px 5%;
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      flex-wrap: wrap;
-      background-color: #fdf9f3;
-    }
+        <div class="info-item">
+          <div class="info-icon">
+            <svg viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10" />
+              <polyline points="12 6 12 12 16 14" />
+            </svg>
+          </div>
+          <div class="info-text">
+            <p>Business Hours</p>
+            <p>
+              Mon – Fri, 9:00 AM – 5:00 PM <span class="badge-open">OPEN</span>
+            </p>
+          </div>
+        </div>
 
-    /* ── INFO CARD ── */
-    .info-container {
-      background: white;
-      width: 100%;
-      max-width: 380px;
-      padding: 40px;
-      border-radius: 20px;
-      box-shadow: 0 15px 35px rgba(0,0,0,0.1);
-      border-top: 8px solid #800000;
-    }
+        <hr class="divider" />
 
-    .info-container h2 {
-      color: #800000;
-      font-weight: 800;
-      font-size: 1.5rem;
-      margin-bottom: 8px;
-    }
-    .info-container > p {
-      color: #777;
-      font-size: 0.9rem;
-      margin-bottom: 30px;
-    }
+        <p class="social-title">Social Media</p>
+        <p>Find us at</p>
+        <div class="social-links">
+          <a href="#" class="social-btn">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+              />
+              <circle cx="4" cy="4" r="2" />
+            </svg>
+            LinkedIn
+          </a>
+          <a href="#" class="social-btn">
+            <svg viewBox="0 0 24 24">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+            </svg>
+            Instagram
+          </a>
+          <a href="#" class="social-btn">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M23 3a10.9 10.9 0 01-3.14 1.53A4.48 4.48 0 0012 8v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+              />
+            </svg>
+            WhatsApp
+          </a>
+        </div>
+      </div>
 
-    .info-item {
-      display: flex;
-      gap: 15px;
-      align-items: flex-start;
-      margin-bottom: 22px;
-    }
-    .info-icon {
-      width: 44px; height: 44px;
-      background: #ffd700;
-      border-radius: 10px;
-      display: flex; align-items: center; justify-content: center;
-      flex-shrink: 0;
-    }
-    .info-icon svg { width: 20px; height: 20px; stroke: #800000; fill: none; stroke-width: 2; }
-    .info-text p:first-child {
-      font-size: 0.75rem; color: #999;
-      text-transform: uppercase; letter-spacing: 0.07em;
-      font-weight: 600; margin-bottom: 2px;
-    }
-    .info-text p:last-child { font-size: 0.92rem; color: #333; font-weight: 500; }
+      <!-- FORM KONTAK -->
+      <div class="form-container">
+        <div class="form-header">
+          <h2>Send a Message</h2>
+          <p>Drop your info below, we’ll reach you soon!</p>
+        </div>
+        <form id="contactForm" onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="email@example.com"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="phone"
+              >Phone Number
+              <span style="color: #aaa; font-weight: 400"
+                >(optional)</span
+              ></label
+            >
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="+62 8xx xxxx xxxx"
+            />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject">
+              <option value="">— Select a topic —</option>
+              <option>English Intensive</option>
+              <option>Bundle Program</option>
+              <option>Skill Development</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Write your message here..."
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn-submit">Send Message</button>
+          <div class="success-banner" id="successBanner">
+            ✓ Kami sudah menerima pesanmu! Tunggu sebentar ya, pesanmu akan
+            segera dibalas😉
+          </div>
+        </form>
+      </div>
+    </div>
 
-    .divider { border: none; border-top: 1.5px solid #f0ede3; margin: 25px 0; }
+    <!-- MAP -->
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15959.266847329665!2d109.33516369663506!3d-0.05144854134475474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e1d59bda5d0cadd%3A0x5217d4caea80b3d0!2sAyani%20Megamall!5e0!3m2!1sid!2sid!4v1774183946683!5m2!1sid!2sid"
+      width="100%"
+      height="220"
+      style="border: 0; border-radius: 20px"
+      allowfullscreen=""
+      loading="lazy"
+    >
+    </iframe>
 
-    /* ── SOCIAL ── */
-    .social-title {
-      font-size: 0.8rem; text-transform: uppercase;
-      letter-spacing: 0.08em; color: #999; margin-bottom: 12px; font-weight: 600;
-    }
-    .social-links { display: flex; gap: 0.6rem; flex-wrap: wrap; }
-    .social-btn {
-      display: inline-flex; align-items: center; gap: 0.4rem;
-      padding: 0.45rem 0.9rem; border-radius: 50px;
-      font-size: 0.82rem; font-weight: 600;
-      text-decoration: none;
-      border: 1.5px solid #800000;
-      color: #800000;
-      background: transparent;
-      transition: all 0.3s;
-    }
-    .social-btn:hover { background: #800000; color: #ffd700; }
-    .social-btn svg { width: 14px; height: 14px; fill: currentColor; }
+    <footer class="main-footer">
+      <div class="footer-container">
+        <div class="footer-about">
+          <h2 class="footer-logo">
+            <span class="text-white">TO</span
+            ><span class="text-yellow">GA</span> Program
+          </h2>
+          <p>
+            Solusi belajar bahasa Inggris terbaik di Pontianak. Berkualitas,
+            terjangkau, dan terpercaya.
+          </p>
+        </div>
 
-    /* ── FORM CONTAINER ── */
-    .form-container {
-      background: white;
-      width: 100%;
-      max-width: 500px;
-      padding: 40px;
-      border-radius: 20px;
-      box-shadow: 0 15px 35px rgba(0,0,0,0.1);
-      border-top: 8px solid #800000;
-    }
+        <div class="footer-contact">
+          <h3>Hubungi Kami</h3>
+          <p>Alamat: Jl. Ayani, Komplek Ayani Megamall No. 123, Pontianak</p>
+          <p>Telepon: (0561) 123456</p>
+          <p>Email: info@englishtoga.com</p>
+        </div>
 
-    .form-header {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-    .form-header h2 {
-      color: #800000;
-      font-weight: 800;
-    }
-    .form-header p {
-      color: #777;
-      font-size: 0.9rem;
-    }
+        <div class="footer-social">
+          <h3>Ikuti Kami</h3>
+          <div class="social-icons">
+            <a href="#">Instagram</a>
+            <a href="#">WhatsApp</a>
+            <a href="#">LinkedIn</a>
+          </div>
+        </div>
+      </div>
 
-    /* ── FORM GROUP ── */
-    .form-group { margin-bottom: 20px; }
+      <div class="footer-bottom">
+        <p>&copy; 2026 TOGA Program. All rights reserved.</p>
+      </div>
+    </footer>
 
-    .form-group label {
-      display: block;
-      font-weight: 600;
-      margin-bottom: 8px;
-      color: #333;
-    }
-
-    .form-group input,
-    .form-group select,
-    .form-group textarea {
-      width: 100%;
-      padding: 12px 15px;
-      border: 2px solid #eee;
-      border-radius: 10px;
-      font-size: 1rem;
-      font-family: inherit;
-      box-sizing: border-box;
-      transition: 0.3s;
-      background-color: #fdf9f3;
-    }
-
-    .form-group input:focus,
-    .form-group select:focus,
-    .form-group textarea:focus {
-      border-color: #800000;
-      outline: none;
-      background-color: #fff9f9;
-    }
-
-    .form-group textarea { resize: vertical; min-height: 130px; }
-
-    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
-
-    /* ── BUTTON ── */
-    .btn-submit {
-      width: 100%;
-      background-color: #800000;
-      color: white;
-      padding: 15px;
-      border: none;
-      border-radius: 10px;
-      font-size: 1.1rem;
-      font-weight: bold;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-    .btn-submit:hover {
-      background-color: #ffd700;
-      color: #800000;
-      transform: translateY(-3px);
-    }
-
-    .success-banner {
-      display: none;
-      background: #eaf7f0; border: 1px solid #86d9ae;
-      border-radius: 10px; padding: 0.9rem 1rem; margin-top: 1rem;
-      font-size: 0.88rem; color: #1d6640; text-align: center; font-weight: 500;
-    }
-
-    /* ── MAP ── */
-    .map-section { padding: 0 5% 60px; }
-    .map-placeholder {
-      border-radius: 20px;
-      border: 2px solid #eee;
-      background: #f5f0e8;
-      height: 220px;
-      display: flex; align-items: center; justify-content: center;
-      flex-direction: column; gap: 0.5rem;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.07);
-    }
-    .map-placeholder svg { opacity: 0.3; }
-    .map-label { font-size: 0.85rem; color: #999; }
-
-    /* ── FOOTER ── */
-    .main-footer {
-      background-color: #4a0000;
-      color: #fff;
-      padding: 60px 5% 20px 5%;
-    }
-
-    .footer-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      gap: 40px;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    .footer-about, .footer-contact, .footer-social {
-      flex: 1;
-      min-width: 250px;
-    }
-
-    .footer-logo {
-      font-weight: 800;
-      font-size: 1.8rem;
-      margin-bottom: 15px;
-      color: #ffd700;
-    }
-
-    .footer-container h3 {
-      color: #ffd700;
-      font-size: 1.2rem;
-      margin-bottom: 20px;
-      border-left: 3px solid #ffd700;
-      padding-left: 10px;
-    }
-
-    .footer-container p {
-      font-size: 0.9rem;
-      line-height: 1.8;
-      color: #e0e0e0;
-    }
-
-    .social-icons a {
-      display: block;
-      color: white;
-      text-decoration: none;
-      margin-bottom: 10px;
-      font-size: 0.9rem;
-      transition: 0.3s;
-    }
-    .social-icons a:hover { color: #ffd700; padding-left: 5px; }
-
-    .footer-bottom {
-      text-align: center;
-      margin-top: 50px;
-      padding-top: 20px;
-      border-top: 1px solid rgba(255,255,255,0.1);
-      font-size: 0.8rem;
-      color: #bbb;
-    }
-
-    .badge-open {
-      display: inline-block;
-      background: #ffd700; color: #800000;
-      font-size: 0.7rem; font-weight: 700;
-      padding: 2px 8px; border-radius: 50px;
-      margin-left: 6px; vertical-align: middle;
-    }
-
-    /* ── RESPONSIVE ── */
-    @media screen and (max-width: 768px) {
-      .navbar { padding: 10px 3%; }
-      .contact-section { padding: 40px 5%; }
-      .form-row { grid-template-columns: 1fr; }
-      .footer-container { flex-direction: column; text-align: center; }
-      .footer-container h3 {
-        border-left: none;
-        border-bottom: 2px solid #ffd700;
-        display: inline-block;
-        padding-bottom: 5px;
+    <script>
+      function handleSubmit(e) {
+        e.preventDefault();
+        const banner = document.getElementById("successBanner");
+        banner.style.display = "block";
+        document.getElementById("contactForm").reset();
+        setTimeout(() => {
+          banner.style.display = "none";
+        }, 5000);
       }
-    }
-  </style>
-</head>
-<body>
+    </script>
 
-<!-- NAVBAR -->
-<nav class="navbar">
-  <a href="#" class="logo">TOGA Program</a>
-  <ul class="nav-links">
-    <li><a href="#">Home</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Services</a></li>
-    <li><a href="#" class="active">Contact</a></li>
-  </ul>
-</nav>
-
-<!-- HERO -->
-<div class="hero">
-  <h1>Contact Us</h1>
-  <p>Let's Improve Your English Together!
-    Masih ragu mau mulai dari mana? Hubungi kami dulu, yuk!</p>
-</div>
-
-<!-- CONTACT SECTION -->
-<div class="contact-section">
-
-  <!-- INFO KONTAK -->
-  <div class="info-container">
-    <h2>Contact Information</h2>
-    <p>Hubungi kami lewat salah satu cara di bawah ini 👇</p>
-
-    <div class="info-item">
-      <div class="info-icon">
-        <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-      </div>
-      <div class="info-text">
-        <p>alamat: </p>
-        <p>Jl. Ayani, Komplek ayani Megamall no.123, Pontianak</p>
-      </div>
-    </div>
-
-    <div class="info-item">
-      <div class="info-icon">
-        <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2A19.86 19.86 0 013.09 4.18 2 2 0 015.07 2h3a2 2 0 012 1.72c.13.96.36 1.9.71 2.81a2 2 0 01-.45 2.11L9.09 9.91a16 16 0 006.99 6.99l1.27-1.27a2 2 0 012.11-.45c.91.35 1.85.58 2.81.71A2 2 0 0122 16.92z"/></svg>
-      </div>
-      <div class="info-text">
-        <p>Telepon</p>
-        <p>(0561) 123456</p>
-      </div>
-    </div>
-
-    <div class="info-item">
-      <div class="info-icon">
-        <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-      </div>
-      <div class="info-text">
-        <p>Email</p>
-        <p>info@englishtoga.com</p>
-      </div>
-    </div>
-
-    <div class="info-item">
-      <div class="info-icon">
-        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-      </div>
-      <div class="info-text">
-        <p>Business Hours</p>
-        <p>Mon – Fri, 9:00 AM – 5:00 PM <span class="badge-open">OPEN</span></p>
-      </div>
-    </div>
-
-    <hr class="divider"/>
-
-    <p class="social-title">Social Media</p>
-    <p>Find us at</p>
-    <div class="social-links">
-      <a href="#" class="social-btn">
-        <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
-        LinkedIn
-      </a>
-      <a href="#" class="social-btn">
-        <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-        Instagram
-      </a>
-      <a href="#" class="social-btn">
-        <svg viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 01-3.14 1.53A4.48 4.48 0 0012 8v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg>
-        WhatsApp
-      </a>
-    </div>
-  </div>
-
-  <!-- FORM KONTAK -->
-  <div class="form-container">
-    <div class="form-header">
-      <h2>Send a Message</h2>
-      <p>Drop your info below, we’ll reach you soon!</p>
-    </div>
-    <form id="contactForm" onsubmit="handleSubmit(event)">
-      <div class="form-row">
-        <div class="form-group">
-          <label for="name">Full Name</label>
-          <input type="text" id="name" name="name" placeholder="Your name" required/>
-        </div>
-        <div class="form-group">
-          <label for="email">Email Address</label>
-          <input type="email" id="email" name="email" placeholder="email@example.com" required/>
-        </div>
-      </div>
-      <div class="form-group">
-        <label for="phone">Phone Number <span style="color:#aaa;font-weight:400;">(optional)</span></label>
-        <input type="tel" id="phone" name="phone" placeholder="+62 8xx xxxx xxxx"/>
-      </div>
-      <div class="form-group">
-        <label for="subject">Subject</label>
-        <select id="subject" name="subject">
-          <option value="">— Select a topic —</option>
-          <option>English Intensive</option>
-          <option>Bundle Program</option>
-          <option>Skill Development</option>
-          <option>Other</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label for="message">Message</label>
-        <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
-      </div>
-      <button type="submit" class="btn-submit">Send Message</button>
-      <div class="success-banner" id="successBanner">
-        ✓ Kami sudah menerima pesanmu! Tunggu sebentar ya, pesanmu akan segera dibalas😉
-      </div>
-    </form>
-  </div>
-
-</div>
-
-<!-- MAP -->
-<iframe
-    src ="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15959.266847329665!2d109.33516369663506!3d-0.05144854134475474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e1d59bda5d0cadd%3A0x5217d4caea80b3d0!2sAyani%20Megamall!5e0!3m2!1sid!2sid!4v1774183946683!5m2!1sid!2sid"
-    width="100%"
-    height="220"
-    style="border: 0; border-radius: 20px;"
-    allowfullscreen=""
-    loading="lazy">
-</iframe> 
-
-<!-- FOOTER -->
-<footer class="main-footer">
-  <div class="footer-container">
-    <div class="footer-about">
-      <div class="footer-logo">TOGA Program</div>
-      <p>Solusi belajar bahasa Inggris dan pengembangan diri terbaik di Pontianak. Berkualitas, terjangkau, dan terpercaya.</p>
-    </div>
-    <div class="footer-contact">
-      <h3>Hubungi Kami</h3>
-      <p>Alamat: Jl. Ayani, Komplek ayani Megamall no.123, Pontianak</p>
-      <p>Telepon: (0561) 123456</p>
-      <p>Email: info@englishtoga.com</p>
-    </div>
-    <div class="footer-social">
-      <h3>Follow Us</h3>
-      <div class="social-icons">
-        <a href="#">Instagram</a>
-        <a href="#">WhatsApp</a>
-        <a href="#">LinkedIn</a>
-      </div>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p>&copy; 2026 TOGA Program. All rights reserved. </p>
-  </div>
-</footer>
-
-<script>
-  function handleSubmit(e) {
-    e.preventDefault();
-    const banner = document.getElementById('successBanner');
-    banner.style.display = 'block';
-    document.getElementById('contactForm').reset();
-    setTimeout(() => { banner.style.display = 'none'; }, 5000);
-  }
-</script>
-</body>
+    <script src="scripthome.js"></script>
+  </body>
 </html>

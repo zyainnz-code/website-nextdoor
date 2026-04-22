@@ -7,19 +7,60 @@
     <link rel="stylesheet" href="stylehelen.css" />
   </head>
   <body>
-    <!-- NAVBAR -->
-    <nav class="navbar">
+    <header class="navbar">
       <div class="logo">
-        <!-- Jika ada logo gunakan: <img src="image/logo-cream.PNG" alt="Logo TOGA" /> -->
-        <img src="image/logo-cream.PNG" alt="Logo TOGA" />
+        <img src="image/logo-cream.PNG" alt="English Next Door Logo" />
       </div>
       <ul class="nav-links">
         <li><a href="home.html">Home</a></li>
         <li><a href="produk.html">Produk</a></li>
-        <li><a href="tentang.html" class="active">Tentang Kami</a></li>
+        <li><a href="tentang.html">Tentang Kami</a></li>
         <li><a href="kontak.html">Kontak</a></li>
       </ul>
-    </nav>
+    </header>
+
+    <div class="countdown-bar">
+      <div class="countdown-bar-inner">
+        <div class="countdown-left">
+          <div class="countdown-badge">🔥 UPCOMING</div>
+          <div class="countdown-title">Sharing Career 2026</div>
+          <div class="countdown-loc">
+            29 April · Function Hall · Universitas Widya Dharma
+          </div>
+        </div>
+
+        <div class="countdown-timers">
+          <div class="countdown-box">
+            <span id="cd-days">00</span><span class="cd-unit">HARI</span>
+          </div>
+          <div class="cd-sep">:</div>
+          <div class="countdown-box">
+            <span id="cd-hours">00</span><span class="cd-unit">JAM</span>
+          </div>
+          <div class="cd-sep">:</div>
+          <div class="countdown-box">
+            <span id="cd-minutes">00</span><span class="cd-unit">MENIT</span>
+          </div>
+          <div class="cd-sep">:</div>
+          <div class="countdown-box">
+            <span id="cd-seconds">00</span><span class="cd-unit">DETIK</span>
+          </div>
+        </div>
+
+        <div style="display: flex; justify-content: flex-end">
+          <a href="#daftar" style="text-decoration: none">
+            <button class="countdown-cta">Daftar Sekarang →</button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-topbar">
+      <div class="hero-topbar-text">
+        <span class="topbar-to">TO</span><span class="topbar-ga">GA</span
+        ><span class="topbar-program"> Program</span>
+      </div>
+    </div>
 
     <!-- HERO -->
     <section class="hero">
@@ -323,37 +364,41 @@
       </div>
     </section>
 
-    <!-- FOOTER -->
     <footer class="main-footer">
       <div class="footer-container">
         <div class="footer-about">
-          <div class="footer-logo-text">
-            <span style="color: #fff">TO</span
-            ><span style="color: #ffd700">GA</span> Program
-          </div>
+          <h2 class="footer-logo">
+            <span class="text-white">TO</span
+            ><span class="text-yellow">GA</span> Program
+          </h2>
           <p>
-            Solusi belajar bahasa Inggris dan pengembangan diri terbaik di
-            Pontianak. Berkualitas, terjangkau, dan terpercaya.
+            Solusi belajar bahasa Inggris terbaik di Pontianak. Berkualitas,
+            terjangkau, dan terpercaya.
           </p>
         </div>
+
         <div class="footer-contact">
           <h3>Hubungi Kami</h3>
           <p>Alamat: Jl. Ayani, Komplek Ayani Megamall No. 123, Pontianak</p>
           <p>Telepon: (0561) 123456</p>
           <p>Email: info@englishtoga.com</p>
         </div>
+
         <div class="footer-social">
           <h3>Ikuti Kami</h3>
           <div class="social-icons">
-            <a href="#">📷 Instagram</a>
-            <a href="#">💬 WhatsApp</a>
-            <a href="#">💼 LinkedIn</a>
+            <a href="#">Instagram</a>
+            <a href="#">WhatsApp</a>
+            <a href="#">LinkedIn</a>
           </div>
         </div>
       </div>
+
       <div class="footer-bottom">
         <p>&copy; 2026 TOGA Program. All rights reserved.</p>
       </div>
     </footer>
+
+    <script src="scripthome.js"></script>
   </body>
 </html>
