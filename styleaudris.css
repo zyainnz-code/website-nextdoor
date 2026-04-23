@@ -1,252 +1,32 @@
-/* margin rapi */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
+/* ============================================================
+   PAGE-PRODUK.CSS — Styles khusus halaman produk.html
+   ============================================================ */
 
-body {
-  background-color: #fdf9f3;
-  margin: 0;
-  padding: 0;
-  font-family: "Poppins", sans-serif;
-  color: #333;
-  transition: background-color 0.5s ease;
-}
-
-.navbar {
-  display: flex !important;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 0px 5%;
-  width: 100%;
-  background-color: #4a0e0e;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.logo img {
-  height: 65px;
-  width: auto;
-  display: block;
-}
-
-.nav-links {
-  display: flex !important;
-  list-style: none;
-  margin-right: 0;
-  padding: 0;
-  margin-left: auto;
-}
-
-.nav-links li {
-  margin: 0 25px;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: #ffffff;
-  font-weight: SD400;
-  transition: 0.3s;
-}
-
-.nav-links a:hover {
-  color: #ffd700;
-}
-
-/*Countdown Bar*/
-.countdown-bar {
-  background: linear-gradient(to bottom, #4a0e0e, #0d1b2e);
-  border-bottom: 1px solid rgba(255, 215, 0, 0.15);
-}
-
-.countdown-bar-inner {
-  padding: 14px 5%;
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  align-items: center;
-  gap: 20px;
-  width: 100%;
-}
-
-.countdown-icon {
-  font-size: 32px;
-  flex-shrink: 0;
-}
-
-.countdown-mid {
-  flex: 1;
-}
-
-.countdown-badge {
-  background: rgba(255, 215, 0, 0.15);
-  color: #ffd700;
-  font-size: 9px;
-  font-weight: 700;
-  padding: 2px 10px;
-  border-radius: 20px;
-  display: inline-block;
-  width: fit-content;
-  letter-spacing: 0.5px;
-}
-
-.countdown-title {
-  color: white;
-  font-size: 1rem;
-  font-weight: 800;
-}
-
-.countdown-timers {
+/* ── PRODUCT HEADER BANNER ── */
+.product-header-banner {
+  height: 350px;
   display: flex;
-  align-items: center;
-  justify-content: center; /* centered like nav content */
-  gap: 5px;
-}
-
-.countdown-box {
-  background: rgba(0, 0, 0, 0.3);
-  border-radius: 8px;
-  padding: 8px 10px;
-  text-align: center;
-  min-width: 52px;
-  border-bottom: 2px solid #ffd700;
-}
-
-.countdown-box span:first-child {
-  display: block;
-  font-size: 1.2rem;
-  font-weight: 800;
-  color: white;
-  line-height: 1;
-}
-
-.cd-unit {
-  font-size: 0.6rem;
-  color: rgba(255, 255, 255, 0.4);
-  display: block;
-  margin-top: 3px;
-  letter-spacing: 0.5px;
-}
-
-.cd-sep {
-  color: #ffd700;
-  font-size: 1.2rem;
-  font-weight: 800;
-  padding-bottom: 14px;
-}
-
-.countdown-left {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  justify-self: start;
-  margin-left: 0; /* remove any margin */
-}
-
-.countdown-right {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  flex-shrink: 0;
-}
-
-.countdown-loc {
-  color: rgba(255, 255, 255, 0.4);
-  font-size: 0.75rem;
-  margin-top: 1px;
-}
-
-.countdown-cta {
-  justify-self: end;
-  background: #ffd700;
-  color: #800000;
-  font-size: 0.88rem;
-  font-weight: 800;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  white-space: nowrap;
-  font-family: "Poppins", sans-serif;
-  transition: 0.3s;
-  width: fit-content; /* don't stretch */
-}
-
-.countdown-cta:hover {
-  transform: translateY(-2px);
-  background: #ffe84d;
-}
-
-/* TOGA icon bar on top */
-.hero-topbar {
-  display: flex;
-  flex-direction: column; /* stack vertically */
   justify-content: center;
   align-items: center;
-  background: white;
-  padding: 14px 0;
-  width: 100%;
-  border-bottom: 3px solid #800000;
-}
-
-.hero-topbar .toga-icon {
-  width: 90px; /* override the 220px, fits better in the bar */
-  margin: 0;
-}
-
-.hero-topbar-text {
-  font-size: 1.2rem;
-  font-weight: 750;
-  font-family: "Poppins", sans-serif;
-}
-
-.topbar-to {
-  color: #800000;
-}
-
-.topbar-ga {
-  color: #ffd700;
-}
-
-.topbar-program {
-  color: #800000;
-}
-
-/* --- CSS KHUSUS PRODUK AUDRIS --- */
-.product-header-banner {
+  text-align: center;
+  color: #f5f5f5;
+  padding: 100px 20px;
   background-image:
     linear-gradient(rgba(128, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
     url("image/happyasian.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  height: 350px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #f5f5f5;
-  padding: 100px 20px;
-  padding-bottom: 50px;
-  text-align: center;
-  margin-top: 60px;
-  margin-bottom: 0 !important;
 }
 
 .banner-content h1 {
-  font-size: 3.5rem; /* Ukuran tulisan diperbesar biar fokus */
+  font-size: 3.5rem;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 3px;
   margin-bottom: 10px;
+  color: #ffd700;
   text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-.underline {
-  height: 5px;
-  width: 80px;
-  background-color: #ffd700; /* Warna Emas */
-  margin: 0 auto 20px auto;
-  border-radius: 10px;
 }
 
 .banner-content p {
@@ -256,63 +36,134 @@ body {
   margin: 0 auto;
   opacity: 0.9;
 }
-.countdown {
-  font-size: 22px;
-  font-weight: bold;
-  color: #ffcc00;
-  margin-top: 10px;
+
+.underline {
+  height: 5px;
+  width: 80px;
+  background-color: #ffd700;
+  margin: 0 auto 20px auto;
+  border-radius: 10px;
 }
 
+/* ── SECTION TITLE (full-width banner merah) ── */
+.section-title {
+  display: block;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  margin-top: 0;
+  text-align: center;
+  padding: 20px 25px;
+  background-color: #800000;
+  border: none;
+  box-sizing: border-box;
+}
+
+.section-title h2 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+.section-title p {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* ── PRODUCT CARDS ── */
 .product-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  max-width: 1200px;
-  margin: 0 auto 80px auto;
-  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 30px;
+  padding: 50px 2%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.audris-card,
+.toefl-mini {
+  flex: 0 1 calc(25% - 30px);
+  min-width: 250px;
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .audris-card {
-  background: white;
-  border-radius: 25px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-  padding: 30px 20px;
-  text-align: center;
-  position: relative;
-  display: flex !important;
-  flex-direction: column !important;
-  justify-content: space-between;
   min-height: 450px;
-  height: 100% !important;
-  transition: 0.3s;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+  border-radius: 25px;
+  padding: 30px 20px;
 }
 
-.audris-card:hover {
+.toefl-mini {
+  min-height: 400px;
+  padding: 30px 20px;
+}
+
+.audris-card:hover,
+.toefl-mini:hover {
   transform: translateY(-10px);
-  border-color: #800000;
   box-shadow: 0 20px 40px rgba(128, 0, 0, 0.2);
+  z-index: 10;
 }
 
-.audris-card h3 {
-  color: #800000;
-  font-size: 1.3rem;
-  font-weight: 800;
-  margin-bottom: 8px;
-  text-transform: uppercase;
+.audris-card h3,
+.toefl-mini h3 {
+  font-size: 1.2rem;
+  color: #4a0e0e;
+  margin-bottom: 15px;
 }
 
-.rating {
-  color: #ffd700; /* Emas untuk Bintang */
-  font-size: 0.9rem;
+.audris-card .desc,
+.toefl-mini .desc {
+  flex-grow: 1;
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.6;
   margin-bottom: 20px;
 }
 
+.toefl-mini .desc {
+  font-size: 0.85rem;
+}
+
 .price-red {
-  color: #333;
   font-size: 1.6rem;
   font-weight: bold;
+  color: #333;
   margin-bottom: 10px;
+}
+
+.toefl-mini .price-red {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.rating {
+  color: #ffd700;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
 }
 
 .duration-tag {
@@ -324,79 +175,6 @@ body {
   font-size: 0.85rem;
   font-weight: 600;
   margin-bottom: 20px;
-}
-
-.audris-card p {
-  font-size: 0.95rem;
-  color: #666;
-  line-height: 1.6;
-  margin-bottom: 30px;
-}
-
-.btn-submit {
-  background-color: #800000;
-  color: white;
-  border: none;
-  padding: 15px 25px;
-  border-radius: 12px;
-  font-weight: 700;
-  cursor: pointer;
-  transition: 0.3s;
-  text-transform: uppercase;
-  width: 100%;
-}
-
-.audris-card .btn-submit {
-  margin-top: auto !important;
-  background-color: #800000;
-  color: white;
-  width: 100%;
-}
-.btn-submit:hover {
-  background-color: #ffd700;
-  color: #800000;
-  transform: scale(1.02);
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-/* Layout TOEFL & PTE Area */
-.toeflarea,
-.pte-area {
-  display: flex;
-  align-items: center;
-  max-width: 1300px;
-  margin: 0 auto 100px auto;
-  gap: 30px;
-  padding: 0 20px;
-  flex-wrap: wrap;
-}
-
-.banner-img {
-  flex: 1;
-  min-width: 300px;
-  position: relative;
-  overflow: hidden;
-  mask-image: linear-gradient(to bottom, black 65%, transparent 100%);
-  -webkit-mask-image: linear-gradient(to bottom, black 65%, transparent 100%);
-  box-shadow: none;
-}
-
-.banner-img img {
-  width: 100%;
-  border-radius: 25px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  object-fit: cover;
 }
 
 .promo-badge {
@@ -412,6 +190,59 @@ body {
   text-transform: uppercase;
 }
 
+/* ── BUTTON ── */
+.btn-submit {
+  background-color: #800000;
+  color: white;
+  width: 100%;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: auto;
+  transition: all 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #ffd700;
+  color: #4a0e0e;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ── TOEFL & PTE AREA ── */
+.toeflarea,
+.pte-area {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1300px;
+  margin: 0 auto 100px auto;
+  padding: 40px 20px 20px;
+}
+
+.banner-img {
+  flex: 1;
+  min-width: 300px;
+  position: relative;
+  overflow: hidden;
+  mask-image: linear-gradient(to bottom, black 65%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 65%, transparent 100%);
+}
+
+.banner-img img {
+  width: 100%;
+  border-radius: 25px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+}
+
 .toefl-products {
   flex: 2.5;
   display: grid;
@@ -419,288 +250,78 @@ body {
   gap: 20px;
 }
 
-.toefl-mini {
-  padding: 30px 20px !important;
-  min-height: 400px !important;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.toefl-mini h3 {
-  font-size: 1.2rem !important;
-}
-
-.toefl-mini .price-red {
-  font-size: 1.5rem !important;
-  color: #333 !important;
-  font-weight: 900;
-}
-
-.toefl-mini .desc {
-  font-size: 0.85rem;
-  color: #666;
-  margin-bottom: 20px;
-}
-
-.section-title {
-  background-color: #800000;
-  color: white;
-  width: 100vw !important;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-top: 0 !important;
-  margin-left: -50vw !important;
-  margin-right: -50vw !important;
-  text-align: center;
-  padding: 20px 25px;
-  box-sizing: border-box;
-  display: block;
-  border: none;
-  border-top: 0;
-}
-
-.section-title h2 {
-  color: #ffffff;
-  font-size: 1.5rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin: 0;
-  padding: 0;
-}
-
-.section-title p {
-  color: rgba(255, 255, 255, 0.85);
-  font-size: 14px;
-  margin-top: 0;
-  margin-bottom: 0;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-  font-weight: 300;
-  letter-spacing: 0.5px;
-  text-align: center !important;
-  max-width: 800px;
-}
-
-/* footer */
-.main-footer {
-  background-color: #4a0000;
-  color: #fff;
-  padding: 60px 5% 20px 5%;
-  font-family: poppins, sans-serif;
-}
-
-.footer-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 40px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.footer-about,
-.footer-contact,
-.footer-social {
-  flex: 1;
-  min-width: 250px;
-}
-
-.footer-logo {
-  font-weight: 800;
-  font-size: 1.8rem;
-  margin-bottom: 15px;
-}
-
-.footer-container h3 {
-  color: #ffd700;
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-  border-left: 3px solid #ffd700;
-  padding-left: 10px;
-}
-
-.footer-container p {
-  font-size: 0.9rem;
-  line-height: 1.8;
-  color: #e0e0e0;
-}
-
-/* Link Sosial Media */
-.social-icons a {
-  display: block;
-  color: white;
-  text-decoration: none;
-  margin-bottom: 10px;
-  font-size: 0.9rem;
-  transition: 0.3s;
-}
-
-.social-icons a:hover {
-  color: #ffd700;
-  padding-left: 5px;
-}
-
-/* Garis Bawah Copyright */
-.footer-bottom {
-  text-align: center;
-  margin-top: 50px;
-  padding-top: 20px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  font-size: 0.8rem;
-  color: #bbb;
-}
-
+/* ── RESPONSIVE ── */
 @media screen and (max-width: 768px) {
-  .navbar {
-    background-color: #4a0e0e !important; /* Marun gelap sesuai kodemu */
-    display: flex !important;
-    justify-content: space-between !important;
-    align-items: center !important;
-    padding: 10px !important;
-    height: 70px !important;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 10001;
-  }
-
-  #menu-toggle {
-    display: none !important;
-  }
-
-  .hamburger {
-    display: flex !important;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 25px;
-    height: 18px;
-    cursor: pointer;
-    z-index: 10002;
-  }
-
-  .hamburger span {
-    display: block;
-    height: 3px;
-    width: 100%;
-    background-color: #ffd700 !important; /* Pakai Emas biar matching sama Logo GA */
-    border-radius: 10px;
-    transition: all 0.3s ease;
-  }
-
-  .nav-links {
-    display: none !important; /* Sembunyi dulu */
-    flex-direction: column !important;
-    position: absolute;
-    left: 0;
-    width: 100%;
-    background-color: #4a0e0e !important;
-    padding: 20px 0 !important;
-    gap: 0 !important;
-    margin: 0 !important;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-  }
-
-  #menu-toggle:checked ~ .nav-links {
-    display: flex !important; /* Muncul saat diklik */
-  }
-
-  #menu-toggle:checked ~ .hamburger span:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
-  }
-  #menu-toggle:checked ~ .hamburger span:nth-child(2) {
-    opacity: 0;
-  }
-  #menu-toggle:checked ~ .hamburger span:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
-  }
-
-  .nav-links li {
-    width: 100%;
-    margin: 0 !important;
-  }
-
-  .nav-links li a {
-    color: #fffaf5 !important;
-    font-size: 13px !important;
-    padding: 15px !important;
-    display: block !important;
-    text-align: center;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-  }
-
-  .banner-content h1 {
-    font-size: 2.2rem;
-  }
   .product-header-banner {
     height: 200px;
     margin-top: 70px;
     padding: 40px 20px;
   }
 
-  .section-title h2 {
-    font-size: 1.3rem;
-    letter-spacing: 0.5px;
+  .banner-content h1 {
+    font-size: 1.8rem;
   }
-  .section-title {
-    margin: 40px 20px;
+  .banner-content p {
+    font-size: 0.95rem;
+    padding: 0 10px;
   }
 
+  .section-title {
+    margin: 0;
+  }
+  .section-title h2 {
+    font-size: 1.3rem;
+  }
   .section-title p {
     font-size: 0.85rem;
     line-height: 1.4;
   }
 
   .product-container {
-    gap: 15px;
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 0 15px;
-    margin-bottom: 50px;
+    gap: 15px;
+    padding: 15px 15px 50px;
   }
 
   .audris-card {
-    padding: 25px 15px;
     min-height: auto;
+    padding: 25px 15px;
     border-radius: 15px;
   }
 
-  .audris-card h3 {
+  .audris-card h3,
+  .toefl-mini h3 {
     font-size: 1.1rem;
     margin-bottom: 5px;
   }
-
-  .rating {
-    font-size: 0.7rem;
-    margin-bottom: 10px;
+  .audris-card .desc,
+  .toefl-mini .desc {
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+  .audris-card p {
+    font-size: 0.8rem;
+    margin-bottom: 20px;
   }
 
   .price-red {
     font-size: 1.3rem;
     margin-bottom: 5px;
   }
-
+  .rating {
+    font-size: 0.7rem;
+    margin-bottom: 10px;
+  }
   .duration-tag {
     font-size: 0.7rem;
     padding: 3px 10px;
     margin-bottom: 15px;
   }
 
-  .audris-card p {
-    font-size: 0.8rem; /* Deskripsi lebih kecil */
-    margin-bottom: 20px;
-    display: -webkit-box;
-    -webkit-line-clamp: 3; /* batas 3 baris */
-    line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-  }
-
   .btn-submit {
     padding: 10px;
     font-size: 0.8rem;
-    border-radius: 8px;
   }
 
   .toefl-products {
@@ -708,85 +329,16 @@ body {
     gap: 15px;
   }
 
-  .banner-img img,
-  .product-header-banner img {
-    width: 100% !important;
-    max-height: 100px !important;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 20px;
-    margin-top: 0 !important;
-    padding-top: 0 !important;
-  }
-
   .banner-img {
     height: auto;
     display: block;
     width: 100%;
   }
-
   .banner-img img {
-    width: 100% !important;
+    width: 100%;
     height: 200px;
     object-fit: cover;
     object-position: center;
     border-radius: 15px;
-  }
-
-  .banner-content h1 {
-    font-size: 1.8rem !important;
-  }
-
-  .banner-content p {
-    font-size: 0.95rem !important;
-    padding: 0 10px;
-  }
-
-  .footer-container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .footer-container h3::after {
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .social-links a:hover {
-    padding-left: 0;
-  }
-
-  .audris-card h3,
-  .toefl-mini h3 {
-    font-size: 1.1rem !important; /* Nama Paket (Starter/Standard) */
-  }
-
-  .price-red {
-    font-size: 1.3rem !important; /* Harga jadi lebih proporsional */
-  }
-
-  .audris-card p,
-  .toefl-mini .desc {
-    font-size: 0.8rem !important; /* Deskripsi fitur di dalam kartu */
-    line-height: 1.5;
-  }
-
-  /* 4. Footer (Biar Gak Makan Tempat) */
-  .footer-logo {
-    font-size: 1.4rem !important;
-  }
-
-  .footer-container h3 {
-    font-size: 1rem !important;
-    margin-bottom: 15px;
-  }
-
-  .footer-container p,
-  .social-links a {
-    font-size: 0.85rem !important;
-  }
-
-  .footer-bottom p {
-    font-size: 0.7rem !important;
   }
 }

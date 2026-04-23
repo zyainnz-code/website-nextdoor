@@ -1,221 +1,6 @@
-/* margin rapi */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
-body {
-  background-color: #fdf9f3;
-  margin: 0;
-  padding: 0;
-  font-family: "Poppins", sans-serif;
-  color: #333;
-  transition: background-color 0.5s ease;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-/* ── NAVBAR ── */
-.navbar {
-  display: flex !important;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 0px 5%;
-  width: 100%;
-  background-color: #4a0e0e;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.logo img {
-  height: 65px;
-  width: auto;
-  display: block;
-}
-
-.nav-links {
-  display: flex !important;
-  list-style: none;
-  margin-right: 0;
-  padding: 0;
-  margin-left: auto;
-}
-
-.nav-links li {
-  margin: 0 25px;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: #ffffff;
-  font-weight: SD400;
-  transition: 0.3s;
-}
-
-.nav-links a:hover {
-  color: #ffd700;
-}
-
-/*Countdown Bar*/
-.countdown-bar {
-  background: linear-gradient(to bottom, #4a0e0e, #0d1b2e);
-  border-bottom: 1px solid rgba(255, 215, 0, 0.15);
-}
-
-.countdown-bar-inner {
-  padding: 14px 5%;
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  align-items: center;
-  gap: 20px;
-  width: 100%;
-}
-
-.countdown-icon {
-  font-size: 32px;
-  flex-shrink: 0;
-}
-
-.countdown-mid {
-  flex: 1;
-}
-
-.countdown-badge {
-  background: rgba(255, 215, 0, 0.15);
-  color: #ffd700;
-  font-size: 9px;
-  font-weight: 700;
-  padding: 2px 10px;
-  border-radius: 20px;
-  display: inline-block;
-  width: fit-content;
-  letter-spacing: 0.5px;
-}
-
-.countdown-title {
-  color: white;
-  font-size: 1rem;
-  font-weight: 800;
-}
-
-.countdown-timers {
-  display: flex;
-  align-items: center;
-  justify-content: center; /* centered like nav content */
-  gap: 5px;
-}
-
-.countdown-box {
-  background: rgba(0, 0, 0, 0.3);
-  border-radius: 8px;
-  padding: 8px 10px;
-  text-align: center;
-  min-width: 52px;
-  border-bottom: 2px solid #ffd700;
-}
-
-.countdown-box span:first-child {
-  display: block;
-  font-size: 1.2rem;
-  font-weight: 800;
-  color: white;
-  line-height: 1;
-}
-
-.cd-unit {
-  font-size: 0.6rem;
-  color: rgba(255, 255, 255, 0.4);
-  display: block;
-  margin-top: 3px;
-  letter-spacing: 0.5px;
-}
-
-.cd-sep {
-  color: #ffd700;
-  font-size: 1.2rem;
-  font-weight: 800;
-  padding-bottom: 14px;
-}
-
-.countdown-left {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  justify-self: start;
-  margin-left: 0; /* remove any margin */
-}
-
-.countdown-right {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  flex-shrink: 0;
-}
-
-.countdown-loc {
-  color: rgba(255, 255, 255, 0.4);
-  font-size: 0.75rem;
-  margin-top: 1px;
-}
-
-.countdown-cta {
-  justify-self: end;
-  background: #ffd700;
-  color: #800000;
-  font-size: 0.88rem;
-  font-weight: 800;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  white-space: nowrap;
-  font-family: "Poppins", sans-serif;
-  transition: 0.3s;
-  width: fit-content; /* don't stretch */
-}
-
-.countdown-cta:hover {
-  transform: translateY(-2px);
-  background: #ffe84d;
-}
-
-/* TOGA icon bar on top */
-.hero-topbar {
-  display: flex;
-  flex-direction: column; /* stack vertically */
-  justify-content: center;
-  align-items: center;
-  background: white;
-  padding: 14px 0;
-  width: 100%;
-  border-bottom: 3px solid #800000;
-}
-
-.hero-topbar .toga-icon {
-  width: 90px; /* override the 220px, fits better in the bar */
-  margin: 0;
-}
-
-.hero-topbar-text {
-  font-size: 1.2rem;
-  font-weight: 750;
-  font-family: "Poppins", sans-serif;
-}
-
-.topbar-to {
-  color: #800000;
-}
-
-.topbar-ga {
-  color: #ffd700;
-}
-
-.topbar-program {
-  color: #800000;
-}
+/* ============================================================
+   PAGE-KONTAK.CSS — Styles khusus halaman kontak.html
+   ============================================================ */
 
 /* ── HERO ── */
 .hero {
@@ -230,6 +15,7 @@ html {
   padding: 80px 20px 60px;
   position: relative;
 }
+
 .hero::after {
   content: "";
   position: absolute;
@@ -239,12 +25,14 @@ html {
   height: 6px;
   background: #ffd700;
 }
+
 .hero h1 {
   font-size: clamp(2rem, 5vw, 3.5rem);
   font-weight: 800;
   color: #ffd700;
   margin-bottom: 15px;
 }
+
 .hero p {
   font-size: 1.1rem;
   line-height: 1.6;
@@ -279,6 +67,7 @@ html {
   font-size: 1.5rem;
   margin-bottom: 8px;
 }
+
 .info-container > p {
   color: #777;
   font-size: 0.9rem;
@@ -291,6 +80,7 @@ html {
   align-items: flex-start;
   margin-bottom: 22px;
 }
+
 .info-icon {
   width: 44px;
   height: 44px;
@@ -301,6 +91,7 @@ html {
   justify-content: center;
   flex-shrink: 0;
 }
+
 .info-icon svg {
   width: 20px;
   height: 20px;
@@ -308,6 +99,7 @@ html {
   fill: none;
   stroke-width: 2;
 }
+
 .info-text p:first-child {
   font-size: 0.75rem;
   color: #999;
@@ -316,6 +108,7 @@ html {
   font-weight: 600;
   margin-bottom: 2px;
 }
+
 .info-text p:last-child {
   font-size: 0.92rem;
   color: #333;
@@ -328,7 +121,6 @@ html {
   margin: 25px 0;
 }
 
-/* ── SOCIAL ── */
 .social-title {
   font-size: 0.8rem;
   text-transform: uppercase;
@@ -337,11 +129,13 @@ html {
   margin-bottom: 12px;
   font-weight: 600;
 }
+
 .social-links {
   display: flex;
   gap: 0.6rem;
   flex-wrap: wrap;
 }
+
 .social-btn {
   display: inline-flex;
   align-items: center;
@@ -356,6 +150,7 @@ html {
   background: transparent;
   transition: all 0.3s;
 }
+
 .social-btn:hover {
   background: #800000;
   color: #ffd700;
@@ -364,6 +159,18 @@ html {
   width: 14px;
   height: 14px;
   fill: currentColor;
+}
+
+.badge-open {
+  display: inline-block;
+  background: #ffd700;
+  color: #800000;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 50px;
+  margin-left: 6px;
+  vertical-align: middle;
 }
 
 /* ── FORM CONTAINER ── */
@@ -390,7 +197,6 @@ html {
   font-size: 0.9rem;
 }
 
-/* ── FORM GROUP ── */
 .form-group {
   margin-bottom: 20px;
 }
@@ -435,7 +241,6 @@ html {
   gap: 15px;
 }
 
-/* ── BUTTON ── */
 .btn-submit {
   width: 100%;
   background-color: #800000;
@@ -448,6 +253,7 @@ html {
   cursor: pointer;
   transition: 0.3s;
 }
+
 .btn-submit:hover {
   background-color: #ffd700;
   color: #800000;
@@ -471,126 +277,13 @@ html {
 .map-section {
   padding: 0 5% 60px;
 }
-.map-placeholder {
-  border-radius: 20px;
-  border: 2px solid #eee;
-  background: #f5f0e8;
-  height: 220px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 0.5rem;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
-}
-.map-placeholder svg {
-  opacity: 0.3;
-}
-.map-label {
-  font-size: 0.85rem;
-  color: #999;
-}
-
-/* footer */
-.main-footer {
-  background-color: #4a0000;
-  color: #fff;
-  padding: 60px 5% 20px 5%;
-  font-family: poppins, sans-serif;
-}
-
-.footer-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 40px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.footer-about,
-.footer-contact,
-.footer-social {
-  flex: 1;
-  min-width: 250px;
-}
-
-.footer-logo {
-  font-weight: 800;
-  font-size: 1.8rem;
-  margin-bottom: 15px;
-}
-
-.footer-container h3 {
-  color: #ffd700;
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-  border-left: 3px solid #ffd700;
-  padding-left: 10px;
-}
-
-.footer-container p {
-  font-size: 0.9rem;
-  line-height: 1.8;
-  color: #e0e0e0;
-}
-
-/* Link Sosial Media */
-.social-icons a {
-  display: block;
-  color: white;
-  text-decoration: none;
-  margin-bottom: 10px;
-  font-size: 0.9rem;
-  transition: 0.3s;
-}
-
-.social-icons a:hover {
-  color: #ffd700;
-  padding-left: 5px;
-}
-
-/* Garis Bawah Copyright */
-.footer-bottom {
-  text-align: center;
-  margin-top: 50px;
-  padding-top: 20px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  font-size: 0.8rem;
-  color: #bbb;
-}
-
-.badge-open {
-  display: inline-block;
-  background: #ffd700;
-  color: #800000;
-  font-size: 0.7rem;
-  font-weight: 700;
-  padding: 2px 8px;
-  border-radius: 50px;
-  margin-left: 6px;
-  vertical-align: middle;
-}
 
 /* ── RESPONSIVE ── */
 @media screen and (max-width: 768px) {
-  .navbar {
-    padding: 10px 3%;
-  }
   .contact-section {
     padding: 40px 5%;
   }
   .form-row {
     grid-template-columns: 1fr;
-  }
-  .footer-container {
-    flex-direction: column;
-    text-align: center;
-  }
-  .footer-container h3 {
-    border-left: none;
-    border-bottom: 2px solid #ffd700;
-    display: inline-block;
-    padding-bottom: 5px;
   }
 }
