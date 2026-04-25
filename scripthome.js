@@ -6,7 +6,7 @@ let autoSlideTimer = null;
 
 // Countdown timer
 function updateCountdown() {
-  const target = new Date("2026-04-29T11:00:00");
+  const target = new Date("2026-05-12T11:00:00");
   const now = new Date();
   const diff = target - now;
 
@@ -18,15 +18,27 @@ function updateCountdown() {
     return;
   }
 
-  const days    = Math.floor(diff / (1000 * 60 * 60 * 24));
-  const hours   = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
   const seconds = Math.floor((diff % (1000 * 60)) / 1000);
 
-  document.getElementById("cd-days").textContent    = String(days).padStart(2, "0");
-  document.getElementById("cd-hours").textContent   = String(hours).padStart(2, "0");
-  document.getElementById("cd-minutes").textContent = String(minutes).padStart(2, "0");
-  document.getElementById("cd-seconds").textContent = String(seconds).padStart(2, "0");
+  document.getElementById("cd-days").textContent = String(days).padStart(
+    2,
+    "0",
+  );
+  document.getElementById("cd-hours").textContent = String(hours).padStart(
+    2,
+    "0",
+  );
+  document.getElementById("cd-minutes").textContent = String(minutes).padStart(
+    2,
+    "0",
+  );
+  document.getElementById("cd-seconds").textContent = String(seconds).padStart(
+    2,
+    "0",
+  );
 }
 
 updateCountdown();
@@ -37,7 +49,10 @@ slidesEl.forEach((_, i) => {
   const dot = document.createElement("span");
   dot.classList.add("dot");
   if (i === 0) dot.classList.add("active");
-  dot.addEventListener("click", () => { goToSlide(i); resetTimer(); });
+  dot.addEventListener("click", () => {
+    goToSlide(i);
+    resetTimer();
+  });
   dotsContainer.appendChild(dot);
 });
 
@@ -85,7 +100,9 @@ document.getElementById("arrowRight").addEventListener("click", () => {
 const viewport = document.querySelector(".hero-carousel-viewport");
 let dragStartX = 0;
 
-viewport.addEventListener("mousedown", (e) => { dragStartX = e.clientX; });
+viewport.addEventListener("mousedown", (e) => {
+  dragStartX = e.clientX;
+});
 viewport.addEventListener("mouseup", (e) => {
   const diff = dragStartX - e.clientX;
   if (Math.abs(diff) > 50) {
@@ -93,7 +110,9 @@ viewport.addEventListener("mouseup", (e) => {
     resetTimer();
   }
 });
-viewport.addEventListener("touchstart", (e) => { dragStartX = e.touches[0].clientX; });
+viewport.addEventListener("touchstart", (e) => {
+  dragStartX = e.touches[0].clientX;
+});
 viewport.addEventListener("touchend", (e) => {
   const diff = dragStartX - e.changedTouches[0].clientX;
   if (Math.abs(diff) > 50) {
@@ -108,13 +127,13 @@ resetTimer();
 // Accordion (unchanged)
 function toggleAccordion(header) {
   const item = header.parentElement;
-  const isActive = item.classList.contains('active');
-  document.querySelectorAll('.accordion-item').forEach(i => {
-    i.classList.remove('active');
-    i.querySelector('.accordion-arrow').textContent = '▶';
+  const isActive = item.classList.contains("active");
+  document.querySelectorAll(".accordion-item").forEach((i) => {
+    i.classList.remove("active");
+    i.querySelector(".accordion-arrow").textContent = "▶";
   });
   if (!isActive) {
-    item.classList.add('active');
-    header.querySelector('.accordion-arrow').textContent = '▼';
+    item.classList.add("active");
+    header.querySelector(".accordion-arrow").textContent = "▼";
   }
 }

@@ -16,7 +16,6 @@
     url("image/happyasian.jpg");
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
 }
 
 .banner-content h1 {
@@ -30,6 +29,7 @@
 }
 
 .banner-content p {
+  color: white;
   font-size: 1.2rem;
   font-weight: 400;
   max-width: 600px;
@@ -261,17 +261,25 @@
   .banner-content h1 {
     font-size: 1.8rem;
   }
+
   .banner-content p {
     font-size: 0.95rem;
     padding: 0 10px;
   }
 
   .section-title {
-    margin: 0;
+    width: 100%;
+    position: static; /* hapus positioning */
+    left: auto;
+    margin-left: 0;
+    margin-right: 0;
+    box-sizing: border-box;
   }
+
   .section-title h2 {
     font-size: 1.3rem;
   }
+
   .section-title p {
     font-size: 0.85rem;
     line-height: 1.4;

@@ -356,6 +356,11 @@ p {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.footer-bottom p {
+  font-size: 0.75rem !important;
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
 /* ============================================================
    HAMBURGER — hidden on desktop, shown on mobile
    ============================================================ */
@@ -459,9 +464,14 @@ p {
   .countdown-bar-inner {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 10px;
     padding: 14px 5%;
+  }
+
+  .countdown-left {
+    align-items: center;
+    text-align: center;
   }
 
   .countdown-timers {
